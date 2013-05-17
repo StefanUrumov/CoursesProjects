@@ -1,0 +1,29 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+namespace SimpleT4Template
+{
+	class MyClass
+	{
+		<# for(int i = 0; i < 3; i++) { #>
+		public int Item<#=i#> { get; set; }
+		<# } #>
+		
+		public int SumThreeNumbers(int one, int two, int three)
+		 {
+			var sum = 0;
+			
+			sum += one;                
+			sum += two;
+			sum += three;
+
+			return sum;
+	    }
+    
+		//I couldn't find how to pass the parameters when call the method
+		//SumThreeNumbers(1, 2, 3);
+		
+	}
+}
