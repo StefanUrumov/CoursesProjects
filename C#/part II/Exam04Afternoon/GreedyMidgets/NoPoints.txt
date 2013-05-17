@@ -1,0 +1,113 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace GreedyMidgets
+{
+    class GreedIsGood
+    {
+        static void Main()
+        {
+            string valley = Console.ReadLine();
+
+            string[] valMap = valley.Split(',');
+            List<int> valNums = new List<int>();
+
+            foreach (var item in valMap)
+            {
+                //Console.WriteLine(item);
+                valNums.Add(int.Parse(item));
+            }
+
+            int patterns = int.Parse(Console.ReadLine());
+            string pattMap = string.Empty;
+
+            for (int i = 0; i < patterns; i++)
+            {
+                pattMap += Console.ReadLine();
+                if (i < patterns - 1)
+                {
+                    pattMap += '*';  
+                }
+                
+            }
+                        
+            //Console.WriteLine(pattMap);
+
+            int coins = 0;
+            int bestSum = 0;
+            int prevPos = 0;
+            var dwarf = 0;
+
+            string[] allPatterns = pattMap.Split('*');
+                        
+            foreach (var pattern in allPatterns)
+            {
+               //Console.WriteLine(pattern);
+               List<int> states = new List<int>();
+
+               string[] currLine = pattern.Split(',');
+
+               foreach (var num in currLine)
+               {
+                   //Console.WriteLine(num);
+                   states.Add(int.Parse(num));
+               }
+
+               GetCoins(valNums,states, coins, dwarf, prevPos, bestSum);
+                
+            }
+
+            Console.WriteLine(bestSum);
+        }
+
+        private static int GetCoins(List<int> valNums, List<int> states, int coins, int dwarf, int prevPos, int bestSum)
+        {
+            for (int i = 0, p = 0; i < valNums.Count && p < states.Count; i++, p++)
+            {
+               
+                    //int currChar = pattern[p] - '0';
+                    //Console.WriteLine(pattern[currChar]);
+                    prevPos = valNums[0] + 0;
+                    if (i == 0)
+                    {
+                        coins += valNums[0];   
+                        
+                    }
+                    else
+                    {
+                        prevPos = valNums[i];
+                        dwarf = prevPos + states[p] + 0;
+                        if (dwarf <= valNums.Count || coins <= valNums.Count)
+                        {
+                            coins += valNums[valNums[prevPos] + states[p] + 0];                          
+                        }
+                        else
+                        {
+                            return bestSum;
+                        }
+                    }
+                   
+                 
+                    
+                    if (coins > bestSum)
+                    {
+                        bestSum = coins;
+                    }
+                    
+                }
+
+
+            
+
+            return bestSum;
+            //if (p == pattern.Length-1)
+            //{
+            //    
+            //}
+        }
+    }
+}

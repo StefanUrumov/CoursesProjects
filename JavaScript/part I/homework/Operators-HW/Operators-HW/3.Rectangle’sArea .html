@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculate Rectangle's Area</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="num">Enter height:</label>
+            <input type="text" id="num" />
+
+            <label for="num2">Enter width</label>
+            <input type="text" id="num2" />
+        </div>
+        <div id="input-button">
+            <a href="#" onclick="findRectangleArea()">Find area</a>
+        </div>
+    </div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function findRectangleArea() {
+            var h = jsConsole.readFloat('#num');
+            var w = jsConsole.readFloat('#num2');
+
+            return jsConsole.writeLine("The rectangle area is: " + w * h);
+        }
+    </script>
+</body>
+</html>

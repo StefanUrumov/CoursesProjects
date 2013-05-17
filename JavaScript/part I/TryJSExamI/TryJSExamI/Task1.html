@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Task 1 - Sequences</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+ 
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+	<div id="console"></div>	
+    <script src="scripts/js-console.js"></script>    
+    
+    <script>
+
+        //var args = new Array(7, 1, 2, -3, 4, 4, 0, 1); //output 3
+        //var args = new Array(6, 1, 3, -5, 8, 7, -6);  //output 4
+        //var args = new Array ( 9, 1, 8, 8, 7, 6, 5, 7, 7, 6); //output 5
+
+
+        Solve(args);
+
+        function Solve(args) {
+
+            var sequence = 0;
+            var count = 0;
+
+            for (var index = 1; index < args.length - 1; index++) {
+
+                if (parseInt(args[index]) <= parseInt(args[index + 1])) {
+                    sequence++;
+                }
+                else {
+                    if (parseInt(args[index]) != parseInt(args[1]) && parseInt(args[index]) < parseInt(args[index-1]) && parseInt(args[index]) > parseInt(args[index +1]) && parseInt(args[index]) != parseInt(args[args.length - 1 ])) {
+                        count++;
+                    }
+                    count++;
+                    sequence = 0;
+                }
+            }
+
+            if (parseInt(args[args.length - 1]) > parseInt(args[args.length - 2])) {
+                count++;
+            }
+
+            //return jsConsole.writeLine(count);
+            return count;
+            }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find trapezoid's area </title>
+     <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="a">Enter a side:</label>
+            <input type="text" id="a" /> 
+            
+             <label for="b">Enter b side:</label>
+            <input type="text" id="b" /> 
+
+             <label for="h">Enter height:</label>
+            <input type="text" id="h" />             
+           
+        </div>
+        <div id="input-button">
+            <a href="#" onclick="findArea()">Find area</a>
+        </div>
+    </div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findArea() {
+            var A = jsConsole.readFloat('#a');
+            var B = jsConsole.readFloat('#b');
+            var H = jsConsole.readFloat('#h');
+            var area = (A + B) * H / 2;
+
+            return jsConsole.writeLine("The trapezoid area is:" + area);
+        }
+    </script>
+
+</body>
+</html>

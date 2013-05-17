@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find if third digit is 7</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="num">Enter number:</label>
+            <input type="text" id="num" />
+        </div>
+        <div id="input-button">
+            <a href="#" onclick="findDigit()">Find digit</a>
+        </div>
+    </div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findDigit() {
+            var input = jsConsole.readFloat('#num');
+            var current = parseInt( input / 100);
+
+            if (current % 10 == 7) {
+                jsConsole.writeLine('Third digit (right-to-left) is 7!');
+            }
+            else {
+                jsConsole.writeLine('Third digit is not 7!');
+            }
+            
+        }
+    </script>
+
+</body>
+</html>

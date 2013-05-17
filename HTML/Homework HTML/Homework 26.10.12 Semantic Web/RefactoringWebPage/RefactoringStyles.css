@@ -1,0 +1,47 @@
+﻿#FirstLine {font-family:'Times New Roman';
+           font-size:medium;           
+}
+#navigation ol {list-style:decimal;
+}
+#NavItem4 {font-weight:bold;
+}
+#LatinText h1{font-family:'Times New Roman';
+            font-size:medium;            
+}
+#this {font-weight:lighter;
+}
+#elit {
+    font-family:'Times New Roman';
+    font-weight:bold;
+}
+#donec {font-family:'Times New Roman';
+        font-style:italic;
+}
+#elit2 {
+    font-family:'Times New Roman';
+    font-weight:bold;
+}
+#donec2 {font-family:'Times New Roman';
+        font-style:italic;
+}
+#elit3 {
+    font-family:'Times New Roman';
+    font-weight:bold;
+}
+#donec3 {font-family:'Times New Roman';
+        font-style:italic;
+}
+#elit4 {
+    font-family:'Times New Roman';
+    font-weight:bold;
+}
+#donec4 {font-family:'Times New Roman';
+        font-style:italic;
+}
+#Footer h1{font-family:'Times New Roman';
+        font-style:normal;
+        font-size:medium;
+        font-weight:lighter;
+}
+body {
+}

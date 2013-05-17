@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find greater integer value</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="num">Enter number:</label>
+            <input type="text" id="num" />
+
+            <label for="num2">Enter second number:</label>
+            <input type="text" id="num2" />
+        </div>
+        <div id="input-button">
+            <a href="#" onclick="findBigger()">Find bigger number</a>
+        </div>
+    </div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findBigger() {
+            var input = jsConsole.readFloat('#num');
+            var input2 = jsConsole.readFloat('#num2');
+            var bigger = input;
+
+            if (input < input2) {
+                bigger = input2;
+            }
+            
+            jsConsole.writeLine('The bigger number is: ' + bigger);
+        }
+    </script>
+
+
+</body>
+</html>

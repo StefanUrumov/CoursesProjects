@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Check correct brackets </title>    
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="inputdiv">
+		<div class="input">
+			<label for="word">Enter expression with brackets: </label>
+			<input type="text" id="word"/>
+		</div>	
+
+		<div id="inputbutton">
+			<input type="button" onclick="onWordClick()" value="Check brackets"/>            
+		</div>
+	</div>
+
+	<div id="console">
+	</div>
+	
+    <script src="scripts/js-console.js">	  
+	</script>
+    		  
+	<script>
+
+	    function onWordClick() {
+	        var input = jsConsole.read('#word');
+            	
+	        var open = '(';
+	        var close = ')';
+	        var count = 0;
+
+	        for (var i = 0; i < input.length; i++) {
+	            if (input[i] == open) {
+	                count++;
+	            }
+	            if (input[i] == close) {
+	                count--;
+	            }
+	        }
+
+	        if (count == 0) {
+	            jsConsole.writeLine('The brackets are put correctly!');
+	        }
+	        else {
+	            jsConsole.writeLine('The brackets are not put correctly!');
+	        }
+	    }
+	</script>
+
+</body>
+</html>

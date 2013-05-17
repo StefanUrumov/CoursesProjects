@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Windows Calculator</title>
+    <style style="text/css"></style>
+    <link type="text/css" rel="stylesheet" href="CalculatorStyles.css" />
+</head>
+<body>
+    <div id="content">        
+        <button id="exit"></button>   
+        <button id="restore"></button>                         
+        <button id="Mini"></button>
+        <h1> <img src="http://prikachi.com/images/478/5743478T.jpg" alt="calc"/> Калкулатор </h1>   
+        <div id="inner">
+            <div id="help"><h1>Изглед Редактиране Помощ</h1></div>
+            <hr id="line"/>            
+        <div id="functions">
+            <form method="post">
+            <input id="display" type="text" value="8854455" />
+            </form>
+            <br />
+        <div id="bitwise">
+            <table>
+                <tr>
+                    <td> 0000 </td>                    
+                    <td> 0000 </td>
+                    <td> 0000 </td>
+                    <td> 0000 </td>
+                    <td> 0000 </td>
+                    <td> 0000 </td>
+                    <td> 0000 </td>
+                    <td> 0000 </td>
+                </tr>
+                <tr class="bitGrey">
+                    <td> 63 </td>                    
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 47 </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 32 </td>
+                </tr>
+                <tr>
+                    <td> 0000 </td>                    
+                    <td> 0000 </td>
+                    <td> 1000 </td>
+                    <td> 0111 </td>
+                    <td> 0001 </td>
+                    <td> 0011 </td>
+                    <td> 1011 </td>
+                    <td> 0111 </td>
+                </tr>
+                <tr class="bitGrey">
+                    <td> 31 </td>                    
+                    <td>  </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 15 </td>
+                    <td>  </td>
+                    <td>  </td>
+                    <td> 0 </td>
+                </tr>
+            </table>
+        </div>
+            <br />
+            <div id="NumericSys">
+                <div >
+                <form action="aaa" method="post">
+                <table id="NumericSys1">                
+                        <tr><td><input type="radio"/>Hex</td></tr> 
+                        <tr><td><input type="radio" checked="checked"/>Dec</td></tr>
+                        <tr><td><input type="radio"/>Oct</td></tr>                      
+                        <tr><td><input type="radio"/>Bin</td></tr>               
+                </table>
+                </form>
+                </div>
+                <br />
+                <div id="NumericSys2">
+            <form action="aaa" method="post">
+            <table>                
+                    <tr><td><input type="radio"checked="checked"/>Qword</td></tr> 
+                    <tr><td><input type="radio" />Dword</td></tr>
+                    <tr><td><input type="radio"/>Word</td></tr>                      
+                    <tr><td><input type="radio"/>Bite</td></tr>               
+            </table>
+            </form>
+            </div>
+            </div>
+            <div id="buttonsGrid">
+                <form action="aaa" method="post">
+                    <table>                
+                        <tr>
+                            <td class="notUsed"> </td>
+                            <td><input class="buttonCalc" type="button" value="Mod"/></td>
+                            <td class="notUsed">A</td>
+                            <td class="notUsed">MC</td>
+                            <td class="notUsed">MR</td>
+                            <td class="notUsed">MS</td>
+                            <td class="notUsed">M+</td>
+                            <td class="notUsed">M-</td>
+                        </tr>
+                        <tr>
+                            <td><input class="buttonCalc" type="button" value="("/></td>
+                            <td><input class="buttonCalc" type="button" value=")"/></td>
+                            <td class="notUsed">B</td>
+                            <td><button id="backArrow"></button></td>
+                            <td><input class="buttonCalc" type="button" value="CE"/></td>
+                            <td><input class="buttonCalc" type="button" value="C"/></td>
+                            <td><button id="plusMin"></button></td>
+                            <td id="sqRoot"></td>
+                        </tr>
+                        <tr>
+                            <td><input class="buttonCalc" type="button" value="RoL"/></td>
+                            <td><input class="buttonCalc" type="button" value="RoR"/></td>
+                            <td class="notUsed">C</td>
+                            <td><input class="buttonCalc" type="button" value="7"/></td>
+                            <td><input class="buttonCalc" type="button" value="8"/></td>
+                            <td><input class="buttonCalc" type="button" value="9"/></td>
+                            <td><input class="buttonCalc" type="button" value="/"/></td>
+                            <td><button id="percent"></button></td>
+                        </tr>
+                        <tr>
+                            <td><input class="buttonCalc" type="button" value="Or"/></td>
+                            <td><input class="buttonCalc" type="button" value="Xor"/></td>
+                            <td class="notUsed">D</td>
+                            <td><input class="buttonCalc" type="button" value="4"/></td>
+                            <td><input class="buttonCalc" type="button" value="5"/></td>
+                            <td><input class="buttonCalc" type="button" value="6"/></td>
+                            <td><input class="buttonCalc" type="button" value="*"/></td>
+                            <td class="notUsed">1/x</td>
+                        </tr>
+                        <tr>
+                            <td><input class="buttonCalc" type="button" value="Lsh"/></td>
+                            <td><input class="buttonCalc" type="button" value="Rsh"/></td>
+                            <td class="notUsed">E</td>
+                            <td><input class="buttonCalc" type="button" value="1"/></td>
+                            <td><input class="buttonCalc" type="button" value="2"/></td>
+                            <td><input class="buttonCalc" type="button" value="3"/></td>
+                            <td><input class="buttonCalc" type="button" value="-"/></td>
+                            <td rowspan="2"><input id="equal" type="button" value="="/></td>                            
+                        </tr>
+                        <tr>
+                            <td><input class="buttonCalc" type="button" value="Not"/></td>
+                            <td><input class="buttonCalc" type="button" value="And"/></td>
+                            <td class="notUsed">F</td>
+                            <td colspan="2"><input id="Zero" type="button" value="0"/></td>
+                            <td class="notUsed">.</td>
+                            <td><input class="buttonCalc" type="button" value="+"/></td>                            
+                         </tr>
+                    </table>
+            </form>
+            </div>
+        </div>
+        </div> 
+
+
+        
+                
+               
+               
+            
+
+       
+    </div>
+</body>
+</html>

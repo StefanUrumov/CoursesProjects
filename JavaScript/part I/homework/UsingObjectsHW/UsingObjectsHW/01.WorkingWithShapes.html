@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Working With Shapes</title>
+</head>
+<body>
+    <script>
+
+    function Program() {
+    var a = Point(3, 4);
+    var b = Point(2, 1);
+    var line1 = Line(a, b);
+    var line2 = Line(Point(2, 3), Point(0, 4));
+    var line3 = Line(Point(1, 1), Point(7, 7));
+    cons.innerHTML = CheckWhetherFormTriangle(line1, line2, line3);
+   
+    function CheckWhetherFormTriangle(line1, line2, line3)
+    {
+        var result = new Array(3);
+        for (var i = 0; i < result.length; i++) {
+            result[i] = CalcDistance(arguments[i].startPoint, arguments[i].endPoint);
+        }
+        //sort array
+        result = result.sort(function (a, b) { return a - b; });
+        if (result[2] < result[1] + result[0]) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    function CalcDistance(start, end)
+    {
+        return Math.sqrt((end.x - start.x) * (end.x - start.x) + (end.y - start.y) * (end.y - start.y));
+    }
+
+    function Point(x, y) {
+        return {
+            x: x,
+            y: y,
+            toString: function () { return "x: " + x + " y: " + y }
+        };
+    }
+
+    function Line(start, end) {
+        return {
+            startPoint: start,
+            endPoint: end
+        };
+    }
+    }
+
+        </script>
+</body>
+</html>

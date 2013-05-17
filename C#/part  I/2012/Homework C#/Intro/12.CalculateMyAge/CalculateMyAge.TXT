@@ -1,0 +1,33 @@
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace _12.CalculateMyAge
+{
+    class CalculateMyAge
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter your year of birth!");
+            int birthYear = int.Parse(Console.ReadLine());
+            int result = (DateTime.Now.Year + 10) - birthYear;
+
+
+            if (birthYear != 0 && birthYear > 1890 && birthYear < DateTime.Now.Year + 1)
+            {
+                Console.Write("After one decade you will be {0} years old!", result);
+            }
+            else
+            {
+                Console.WriteLine("Incorrect input!Please try again!");
+            }
+
+            Console.WriteLine();
+        }
+    }
+}

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.DocumentSystem", "01.DocumentSystem", "{31317D10-E778-4DBE-95BA-6C7B2C763672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentSystem", "DocumentSystem\DocumentSystem.csproj", "{D38D946D-40C1-4B14-9C25-F073CBE04007}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.AcademyGeometry", "02.AcademyGeometry", "{3ED949E1-EC4D-4B72-849B-5D16784C9078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyGeometry", "AcademyGeometry\AcademyGeometry\AcademyGeometry.csproj", "{F9FC438A-14C4-499C-A94E-33DB6D916107}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D38D946D-40C1-4B14-9C25-F073CBE04007}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D38D946D-40C1-4B14-9C25-F073CBE04007}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D38D946D-40C1-4B14-9C25-F073CBE04007}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D38D946D-40C1-4B14-9C25-F073CBE04007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9FC438A-14C4-499C-A94E-33DB6D916107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9FC438A-14C4-499C-A94E-33DB6D916107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9FC438A-14C4-499C-A94E-33DB6D916107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FC438A-14C4-499C-A94E-33DB6D916107}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D38D946D-40C1-4B14-9C25-F073CBE04007} = {31317D10-E778-4DBE-95BA-6C7B2C763672}
+		{F9FC438A-14C4-499C-A94E-33DB6D916107} = {3ED949E1-EC4D-4B72-849B-5D16784C9078}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+﻿#table {border-spacing:0;
+        border-collapse:collapse;
+}
+#thead {background-color:lightgrey;
+}
+#drag {text-align:left;              
+}
+#id {text-align:left;     
+}
+#name {text-align:left;
+}
+#price {text-align:left;
+}
+#idfield {width:50px;
+}
+#imgprice {width:30px;
+           height:30px;
+}
+#imgprice1 {width:30px;
+           height:30px;
+}
+#stockfield {width:60px;
+}
+#imgprice2 {width:30px;
+           height:30px;
+}
+#tfoot {background-color:lightgrey;
+}
+#previous {width:20px;
+           height:20px;
+}
+#Nxt {width:20px;
+      height:20px;
+}
+#Prv {width:20px;
+      height:20px;
+}
+#next {width:20px;
+      height:20px;
+}
+input {vertical-align:middle;
+}
+#itemsspan {text-align:right;
+}
+body {
+}

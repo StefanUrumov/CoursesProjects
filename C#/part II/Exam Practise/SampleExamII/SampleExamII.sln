@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.CleanCode", "01.CleanCode\01.CleanCode.csproj", "{482723A4-DDD1-4DDA-A10A-C9DA37FEE633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.Sudoku", "02.Sudoku\02.Sudoku.csproj", "{5C7F52B2-744A-496F-B89A-B744D0D6E51A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.Employees", "03.Employees\03.Employees.csproj", "{FA459F1E-51A7-4469-AA7F-9DB98E900406}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{482723A4-DDD1-4DDA-A10A-C9DA37FEE633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{482723A4-DDD1-4DDA-A10A-C9DA37FEE633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{482723A4-DDD1-4DDA-A10A-C9DA37FEE633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{482723A4-DDD1-4DDA-A10A-C9DA37FEE633}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7F52B2-744A-496F-B89A-B744D0D6E51A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7F52B2-744A-496F-B89A-B744D0D6E51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7F52B2-744A-496F-B89A-B744D0D6E51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7F52B2-744A-496F-B89A-B744D0D6E51A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA459F1E-51A7-4469-AA7F-9DB98E900406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA459F1E-51A7-4469-AA7F-9DB98E900406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA459F1E-51A7-4469-AA7F-9DB98E900406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA459F1E-51A7-4469-AA7F-9DB98E900406}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

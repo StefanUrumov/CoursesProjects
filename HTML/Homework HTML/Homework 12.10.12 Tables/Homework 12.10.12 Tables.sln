@@ -1,0 +1,115 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Calculator Page", "Calculator Page", "{2FCC91D4-6262-4E4D-A475-1158ED6A90CB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CalculatorPage", "CalculatorPage\", "{B42EA2CB-1361-4071-B01D-29B89BA53F14}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/CalculatorPage"
+		Debug.AspNetCompiler.PhysicalPath = "CalculatorPage\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\CalculatorPage\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/CalculatorPage"
+		Release.AspNetCompiler.PhysicalPath = "CalculatorPage\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\CalculatorPage\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53166"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fresh Fruits", "Fresh Fruits", "{6FFABC93-C8E9-46D7-9312-4145EA960FFF}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FreshFruits", "FreshFruits\", "{D816FD51-2A97-4034-8CD4-9E10DAB673AD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/FreshFruits"
+		Debug.AspNetCompiler.PhysicalPath = "FreshFruits\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\FreshFruits\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/FreshFruits"
+		Release.AspNetCompiler.PhysicalPath = "FreshFruits\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\FreshFruits\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53177"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "School Form", "School Form", "{DDFB7CD9-C5DC-4DA9-A46C-62ABB6DD1CD2}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SchoolForm", "SchoolForm\", "{882CA001-FB6E-40A9-B9FA-8AF8599C93F8}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/SchoolForm"
+		Debug.AspNetCompiler.PhysicalPath = "SchoolForm\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SchoolForm\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SchoolForm"
+		Release.AspNetCompiler.PhysicalPath = "SchoolForm\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SchoolForm\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53181"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleTable", "SimpleTable", "{140096A1-A761-45B5-99FB-88144849ECD7}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SimpleTable", "SimpleTable\", "{653B724E-7E74-4553-A550-04DE4D445C8E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/SimpleTable"
+		Debug.AspNetCompiler.PhysicalPath = "SimpleTable\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SimpleTable\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SimpleTable"
+		Release.AspNetCompiler.PhysicalPath = "SimpleTable\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SimpleTable\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53183"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B42EA2CB-1361-4071-B01D-29B89BA53F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42EA2CB-1361-4071-B01D-29B89BA53F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D816FD51-2A97-4034-8CD4-9E10DAB673AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D816FD51-2A97-4034-8CD4-9E10DAB673AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{882CA001-FB6E-40A9-B9FA-8AF8599C93F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{882CA001-FB6E-40A9-B9FA-8AF8599C93F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{653B724E-7E74-4553-A550-04DE4D445C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{653B724E-7E74-4553-A550-04DE4D445C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B42EA2CB-1361-4071-B01D-29B89BA53F14} = {2FCC91D4-6262-4E4D-A475-1158ED6A90CB}
+		{D816FD51-2A97-4034-8CD4-9E10DAB673AD} = {6FFABC93-C8E9-46D7-9312-4145EA960FFF}
+		{882CA001-FB6E-40A9-B9FA-8AF8599C93F8} = {DDFB7CD9-C5DC-4DA9-A46C-62ABB6DD1CD2}
+		{653B724E-7E74-4553-A550-04DE4D445C8E} = {140096A1-A761-45B5-99FB-88144849ECD7}
+	EndGlobalSection
+EndGlobal

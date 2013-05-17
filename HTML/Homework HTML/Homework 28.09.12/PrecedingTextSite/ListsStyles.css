@@ -1,0 +1,25 @@
+﻿
+ol {
+}
+
+    ol li {list-style:upper-roman;
+    }
+
+    ol li ol li {list-style-type:lower-alpha;
+    }
+
+        #list2 li{list-style-type:decimal;   
+            }
+
+                #nestedList2 li {list-style-type:circle;
+                }
+                    #nestedList2 li ul li {list-style-type:disc;
+                }
+
+    ol li ul li {list-style-type:disc;
+    }
+
+
+
+body {
+}

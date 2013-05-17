@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <script>
+
+        function Solve(args) {
+
+            var N = parseInt(args[0]);
+            var answer = 0;
+            var i = 0;
+            var isSequence = false;
+
+            //var args = new Array(7, 1, 2, -3, 4, 4, 0, 1);
+
+            for (i = 1; i < args.length - 1; i++) {
+                if (args[i] <= args[i + 1]) {
+                    isSequence = true;
+                }
+                else {
+                    isSequence = false;
+                    answer++;
+
+                    if (args[i] < args[i - 1] && args[i] > args[i + 1] && args[i] != args[args.Length - 1]) {
+                        answer++;
+                        isSequence = false;
+                    }                    
+                }   
+            }
+
+            if (isSequence == true) {
+                answer++;
+            }
+
+            return answer;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find the most frequent number</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <h3> to finds the most frequent number in an array.<br />
+            Please input the array elements separated by a single white space</h3>
+
+        <div class="input">
+            <label for="inputArr">Your array:</label>
+            <input type="text" id="inputArr" />
+        </div>
+
+        <div id="input-button">
+            <input type="button" onclick="findBestElement()" value="Find best element"/>
+        </div>
+    </div>
+
+    <div id="console"></div>
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findBestElement() {
+            var input = document.getElementById("inputArr").value;
+            var myArr = input.split(' ');
+
+            var tempValue = 0;
+            var frequentValue = 0;
+            var bestFrequency = 0;
+            var tempFrequency = 1;
+            var bestValue = 0;
+
+            for (var i = 0; i < myArr.length - 1; i++)
+            {
+                tempValue = myArr[i];
+                for (var j = 1; j < myArr.length; j++)
+                {
+                    if (tempValue == myArr[j])
+                    {
+                        frequentValue = tempValue;
+                        tempFrequency++;
+                        
+                        if (tempFrequency > bestFrequency)
+                        {
+                            bestFrequency = tempFrequency;
+                            bestValue = tempValue;
+                        }
+                    }
+                }
+
+                tempFrequency = 0;                
+            }
+
+            jsConsole.writeLine("The most frequent value is " + bestValue + " and it's repeating " + bestFrequency + " times.");
+        }        
+    </script>
+
+
+</body>
+</html>

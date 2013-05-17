@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Form Sample</title>
+    <style type="text/css"></style>
+    <link type="text/css" rel="stylesheet" href="FormStyles.css" />
+    <script type="text/javascript" src="FormScript.js"></script>
+</head>
+<body>
+    <div id="content">
+        <form name="SomeForm" method="get" action="http://google.com">
+            <table id="table" border="1">
+                <colgroup>
+                    <col style="width:300px" />
+                </colgroup>
+                <tr>
+                    <td id="LName">Last Name:</td>
+                    <td><input id="LN" type="text" name="LName" value="Last Name" tabindex="1"/></td> 
+                </tr>
+                <tr>
+                    <td id="FName">First Name:</td>
+                    <td><input id="FN" type="text" name="FName" value="First Name" tabindex="2"/></td> 
+                </tr>
+                <tr>
+                    <td id="Adress">Adress:</td>
+                    <td><textarea name="Adress Input" rows="6" cols="28" tabindex="3">157 Bulgaria bld. floor 4 office 43</textarea></td>
+                </tr>
+                <tr>
+                    <td id="City">City:</td>
+                    <td><input type="text" tabindex="4" value="Sofia"/>State:<input id="State" type="text" tabindex="5" /></td>
+                </tr>
+                <tr>
+                    <td id="ZIP">ZIP/Postal Code:</td>
+                    <td><input id="post" type="text" tabindex="6" value="1000"/></td>
+                </tr>
+                <tr>
+                    <td id="Country">Country:</td>
+                    <td>
+                        <select id="CountryChoice" tabindex="7">
+                            <option value="Value1" selected="selected">Bulgaria</option>
+                            <option value="Value2">Other</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td id="Phone">Phone(country code, area code, number)</td>
+                    <td>(+<input id="CCode" type="tel" value="359" tabindex="8"/>)<input id="ACode" type="tel" value="88" tabindex="9"/>-<input id="NCode" type="tel" value="8334343" tabindex="10"/></td>
+                </tr>
+                <tr>
+                    <td id="Email">Email:</td>
+                    <td><input id="EmailInput" type="email" required="true" value="myemail@gmail.com" tabindex="11"/></td>
+                </tr>
+                <tr>
+                    <td id="BDate">Birth Date</td>
+                    <td>Month<input type="text" id="Month" tabindex="12" value="12"/> Day<input type="text" id="Day" tabindex="13" value="31"/> Year 4(digit)<input type="text" id="Year" tabindex="14" value="1981"/></td>
+                </tr>
+                <tr>
+                    <td id="Gender">Gender</td>
+                    <td><select id="Gen" tabindex="14">
+                        <option value="Value1" selected="selected">Male</option>
+                        <option value="Value2">Female</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td id="SDate">Starting Date</td>
+                    <td><input type="radio" name="date" value="Spring" tabindex="15"/>Spring 2006<input type="radio" name="date" value="Summer" tabindex="16"/>Summer 2006</td>
+                </tr>
+                <tr>
+                    <td id="Comments">Comments/Questions</td>
+                    <td><textarea name="Questions" rows="6" cols="28" tabindex="17">Please send me more information about the lodging</textarea></td>
+                </tr>
+                <tr id="FinalButtons">
+                    <td colspan="2"><input type="submit" value="Aplly Now" onclick="ButtonAlert(event)" />
+                    <input type="reset" name="ResetButton" value="Reset the form"/> </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find greatest of 5 number values</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="num">Enter number:</label>
+            <input type="text" id="num" />
+
+            <label for="num2">Enter second number:</label>
+            <input type="text" id="num2" />
+
+            <label for="num3">Enter third number:</label>
+            <input type="text" id="num3" />
+
+            <label for="num4">Enter fourth number:</label>
+            <input type="text" id="num4" />
+
+            <label for="num5">Enter fifth number:</label>
+            <input type="text" id="num5" />
+        </div>
+        <div id="input-button">
+            <input type="button" onclick="findBiggest()" value="Find biggest"/>
+        </div>
+    </div>
+
+    <div id="console"></div>
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findBiggest() {
+            var value = jsConsole.readFloat('#num');
+            var value2 = jsConsole.readFloat('#num2');
+            var value3 = jsConsole.readFloat('#num3');
+            var value4 = jsConsole.readFloat('#num4');
+            var value5 = jsConsole.readFloat('#num5');
+
+            var numArr = new Array();
+            numArr.push(value);
+            numArr.push(value2);
+            numArr.push(value3);
+            numArr.push(value4);
+            numArr.push(value5);
+
+            
+            numArr.sort(function (a, b) { return a - b });
+            jsConsole.writeLine("The biggest number is: ");
+            jsConsole.writeLine(numArr[numArr.length - 1]);
+            /*
+            for (var i = 0; i < numArr.length; i++) {
+                jsConsole.writeLine(numArr[i]);
+            }
+            */
+        }
+
+    </script>
+
+
+</body>
+</html>

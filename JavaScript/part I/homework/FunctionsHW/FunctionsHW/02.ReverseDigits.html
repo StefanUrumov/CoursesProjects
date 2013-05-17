@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Reverse digits</title>    
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="inputdiv">
+		<div class="input">
+			<label for="num">Enter number: </label>
+			<input type="text" id="num"/>
+		</div>	
+
+		<div id="inputbutton">
+			<input type="button" onclick="onNumberClick()" value="Reverse number"/>            
+		</div>
+	</div>
+
+	<div id="console">
+	</div>
+	
+    <script src="scripts/js-console.js">	  
+	</script>
+    		  
+	<script>
+
+	    function onNumberClick(num) {
+	        var input = jsConsole.readFloat('#num');
+
+	        var currentNumber = input.toString();
+	        var result = '';
+	        for (var i = currentNumber.length; i >= 0; i--) {
+	            result += currentNumber[i];
+	        }
+
+	        jsConsole.writeLine(result);
+	    }
+	</script>
+
+</body>
+</html>

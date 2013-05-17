@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DOM Manipilation task</title>
+    <script src="DOMScript.js"></script>
+</head>
+<body onload="onBodyLoad()">
+    <div id="wrapper">
+        <div id="nav">
+            <ul>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+            <li><a href="#">Item 6</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Item 11</a></li>
+            <li><a href="#">Item 12</a></li>
+            <li><a href="#">Item 13</a></li>
+            <li><a href="#">Item 14</a></li>
+            <li><a href="#">Item 15</a></li>
+            <li><a href="#">Item 16</a></li>
+        </ul>
+        </div>        
+    </div>
+
+    <script>
+        function onBodyLoad() {
+            var attributes = {
+                "id": "chapter-5",
+                "class": "chapters"
+            };
+
+            dom.addElement("#table-of-contents", "li", attributes, "<a href='#'>Chapter 35.</a>");
+            dom.removeElements("ul", "li:first-child");
+            dom.attachEventHandler("button", "click", function () { alert("Button clicked."); });
+
+            for (var i = 0; i < 300; i++) {
+                dom.addElementViaBuffer("#wrapper", "div", null, "div" + i);
+
+                if (i % 2 === 1) {
+                    dom.addElementViaBuffer("#table-of-contents", "li", null, "<a href='#'>Item" + i + ".</a>");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

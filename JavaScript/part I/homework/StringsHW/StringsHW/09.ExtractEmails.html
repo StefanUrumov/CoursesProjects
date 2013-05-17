@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Extract all emails</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+
+	<script>
+
+	    var text = "Here are some emails koko.asenov@abv.bg and may be some more mails like adoKirov@gmail.bg and somesome@mail.bg";
+	    jsConsole.writeLine(text);
+
+	    var emailArray = [];
+
+	    var index = text.indexOf('@');
+
+	    while (index > -1) {
+	        if (text[index - 1] != " " && text[index + 1] != " ") { //check for single index
+	            var identifier = text.substring(text.lastIndexOf(" ", index - 1), index);
+	            var host = text.substring(index + 1, text.indexOf(".", index + 1));
+	            var domain = text.substring(text.indexOf(".", index + 1) + 1, text.indexOf(" ", text.indexOf(".", index + 1) + 1));
+	            var email = identifier + "@" + host + "." + domain;//it's not working slow for 5 elements
+	            emailArray.push(email);
+	            index = text.indexOf("@", index + 1);
+	        }
+	    }
+
+	    for (var email in emailArray) {
+	        jsConsole.writeLine(emailArray[email]);
+	    }
+
+
+	</script>
+
+
+</body>
+</html>

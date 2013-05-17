@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Parse URL</title>    
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <label for="url">Enter a url adress in format "http://www.gmail.com/login/password"! </label>
+	<input id="url" type="text" class="js-console-input" />
+	<a href="#" class="js-console-btn" onclick="parseURL()">Parse the URL to JSON object and print</a>
+	<div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+
+	<script>
+        
+	    function parseURL() {
+	        var url = jsConsole.read("#url");
+	        jsConsole.writeLine(url);
+	        var protocol = url.substring(0, url.indexOf(":"));
+	        var server = url.substring(url.indexOf(":") + 3, url.indexOf("/", url.indexOf(":") + 3));
+	        var resource = url.substr(url.indexOf("/", url.indexOf(":") + 3) + 1)
+
+	        var jsonUrl = {
+	            "Protocol": protocol,
+	            "Server": server,
+	            "Resourse": resource
+	        }
+
+	        jsConsole.writeLine("Protokol :" + jsonUrl.Protokol);
+	        jsConsole.writeLine("Server :" + jsonUrl.Server);
+	        jsConsole.writeLine("Resource :" + jsonUrl.Resource);
+
+	    }
+
+    </script>
+
+</body>
+</html>

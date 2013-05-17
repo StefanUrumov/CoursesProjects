@@ -1,0 +1,219 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Numerics;
+using System.IO;
+
+namespace ProvadiaNumbers
+{
+    class NumsToProvadia
+    {
+        static void Main()
+        {
+            BigInteger decNumber = BigInteger.Parse(Console.ReadLine());
+
+            StringBuilder finalNum = new StringBuilder();
+            int numLen = finalNum.Length - 1;                       
+                     
+            if (decNumber <= 25)
+            {
+                char a = 'A';
+                BigInteger result = (BigInteger)a + (decNumber);
+                finalNum.Append((char)result);
+            }
+
+
+            //finding the table
+
+            CheckMore(decNumber, finalNum);
+
+
+
+            //numbers bigger than table
+
+           //BigInteger current = 0;
+           //            
+           //while (decNumber != 0 && decNumber > 255)
+           //{
+           //    current = decNumber / 256;
+           //
+           //    if (decNumber % 256 < 25)
+           //    {
+           //        char a = 'A';
+           //        BigInteger result = (BigInteger)a + (decNumber % 256);
+           //        finalNum.Append((char)result);
+           //    }
+           //    if (decNumber % 256 > 25 && decNumber % 256 < 52)
+           //     {
+           //         char bigLetter = 'A';
+           //         char smallLetter = 'a';
+           //         BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+           //         finalNum.Append((char)result);
+           //     }
+           //     if (decNumber % 256 > 52 && decNumber % 256 < 78)
+           //     {
+           //         char bigLetter = 'A';
+           //         char smallLetter = 'b';
+          //         BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+          //         finalNum.Append((char)result);
+          //     }
+          //     if (decNumber % 256 > 78 && decNumber % 256 < 104)
+          //     {
+          //         char bigLetter = 'A';
+          //         char smallLetter = 'c';
+          //         BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+          //         finalNum.Append((char)result);
+          //     }
+          //     if (decNumber % 256 > 104 && decNumber % 256 < 130)
+          //    {
+          //        char bigLetter = 'A';
+          //        char smallLetter = 'd';
+          //        BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+          //        finalNum.Append((char)result);
+          //    }
+          //    if (decNumber % 256 > 130 && decNumber % 256 < 156)
+          //    {
+          //      char bigLetter = 'A';
+          //      char smallLetter = 'e';
+          //      BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+          //      finalNum.Append((char)result);
+          //  }
+          //  if (decNumber % 256 > 156 && decNumber % 256 < 182)
+          //  {
+          //      char bigLetter = 'A';
+          //      char smallLetter = 'f';
+          //      BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+          //      finalNum.Append((char)result);
+          //  }
+          //  if (decNumber % 256 > 182 && decNumber % 256 < 208)
+          //  {
+          //      char bigLetter = 'A';
+          //      char smallLetter = 'g';
+          //      BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+          //      finalNum.Append((char)result);
+          //  }
+          //  if (decNumber % 256 > 208 && decNumber % 256 < 234)
+          //  {
+          //      char bigLetter = 'A';
+          //      char smallLetter = 'h';
+          //      BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+          //      finalNum.Append((char)result);
+          //  }
+          //  if (decNumber % 256 > 234 && decNumber % 256 < 255)
+          //  {
+          //      char bigLetter = 'A';
+          //      char smallLetter = 'i';
+          //      BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+          //      finalNum.Append((char)result);
+          //  } 
+          //
+          //
+          //  //else
+                //{
+                //    finalNum += (decNumber % 256).ToString();
+                //}
+
+           //     decNumber = current;
+           // }
+                        
+            Console.WriteLine(finalNum);
+
+            //if (numLen > 1)
+            //{
+            //    string resultNumber = finalNum.ToString();
+            //    int digit = 0;
+            //    int result = 0;
+            //
+            //
+            //    for (int index = resultNumber.Length; index >= 0 ; index--)
+            //    {
+            //     
+            //    }
+            //
+            //    Console.WriteLine(result);             
+            //
+            //}
+
+             
+        }
+
+        private static StringBuilder CheckMore(BigInteger decNumber, StringBuilder finalNum)
+        {
+            while (decNumber > 25 && decNumber <= 256)
+            {
+
+                if (decNumber > 25 && decNumber < 52)
+                {
+                    char bigLetter = 'A';
+                    char smallLetter = 'a';
+                    BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+                    return finalNum.Append((char)result);
+                }
+                if (decNumber > 52 && decNumber < 78)
+                {
+                    char bigLetter = 'A';
+                    char smallLetter = 'b';
+                    BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+                    finalNum.Append((char)result);
+                }
+                if (decNumber > 78 && decNumber < 104)
+                {
+                    char bigLetter = 'A';
+                    char smallLetter = 'c';
+                    BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+                    finalNum.Append((char)result);
+                }
+                if (decNumber > 104 && decNumber < 130)
+                {
+                    char bigLetter = 'A';
+                    char smallLetter = 'd';
+                    BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+                    finalNum.Append((char)result);
+                }
+                if (decNumber > 130 && decNumber < 156)
+                {
+                    char bigLetter = 'A';
+                    char smallLetter = 'e';
+                    BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+                    finalNum.Append((char)result);
+                }
+                if (decNumber > 156 && decNumber < 182)
+                {
+                    char bigLetter = 'A';
+                    char smallLetter = 'f';
+                    BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+                    finalNum.Append((char)result);
+                }
+                if (decNumber > 182 && decNumber < 208)
+                {
+                    char bigLetter = 'A';
+                    char smallLetter = 'g';
+                    BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+                    finalNum.Append((char)result);
+                }
+                if (decNumber > 208 && decNumber < 234)
+                {
+                    char bigLetter = 'A';
+                    char smallLetter = 'h';
+                    BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+                    finalNum.Append((char)result);
+                }
+                if (decNumber > 234 && decNumber < 255)
+                {
+                    char bigLetter = 'A';
+                    char smallLetter = 'i';
+                    BigInteger result = (BigInteger)smallLetter + (BigInteger)bigLetter + (decNumber % 256);
+                    finalNum.Append((char)result);
+                }
+            }
+            return finalNum;
+        }
+
+        //public static int FindPow(int sqr)
+        //{
+        //    return (1 << (sqr * 4));
+        //}
+    }
+}

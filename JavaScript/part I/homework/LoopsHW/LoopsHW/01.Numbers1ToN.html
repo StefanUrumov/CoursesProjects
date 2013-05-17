@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Print numbers from 1 to N</title>
+     <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="inputdiv">
+		<div class="input">
+			<label for="num">Enter number: </label>
+			<input type="text" id="num"/>
+		</div>	
+
+		<div id="inputbutton">
+			<input type="button" onclick="onNumberClick()" value="Print from 1 to number"/>            
+		</div>
+	</div>
+
+	<div id="console">
+	</div>
+	
+    <script src="scripts/js-console.js">	  
+	</script>
+    		  
+	<script>
+
+	    function onNumberClick(num) {
+	        var input = jsConsole.readFloat('#num');
+            
+	        for (var i = 1; i <= input; i++) {
+	            jsConsole.writeLine(i);
+	        }
+	        }	    
+	</script>	
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormSample", "FormSample", "{C3F3582A-1B5C-4955-B643-DFDDE33A9611}"
+	ProjectSection(SolutionItems) = preProject
+		FormSample\FormSamplePage.html = FormSample\FormSamplePage.html
+		FormSample\FormScript.js = FormSample\FormScript.js
+		FormSample\FormStyles.css = FormSample\FormStyles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PCWebPage", "PCWebPage", "{4EB84DF4-712E-4476-B72D-06C37603663F}"
+	ProjectSection(SolutionItems) = preProject
+		PCWebPage\PCPage.html = PCWebPage\PCPage.html
+		PCWebPage\PCStyles.css = PCWebPage\PCStyles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProductPage", "ProductPage", "{00900C54-9DEC-4692-B0FA-D305494D7095}"
+	ProjectSection(SolutionItems) = preProject
+		ProductPage\ProductPage.html = ProductPage\ProductPage.html
+		ProductPage\ProductStyles.css = ProductPage\ProductStyles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UniversityInfo", "UniversityInfo", "{FD5F52D5-AC43-47F2-B179-9A58809C8809}"
+	ProjectSection(SolutionItems) = preProject
+		University Info\UniversityInfoPage.html = University Info\UniversityInfoPage.html
+		University Info\UniversityStyles.css = University Info\UniversityStyles.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

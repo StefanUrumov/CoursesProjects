@@ -1,0 +1,84 @@
+﻿#table {border-spacing:0;
+        border-collapse:collapse;
+}
+#LName {font-family:'Times New Roman';
+        font-weight:bold;   
+        text-align:right;             
+}
+#LN {width:245px;
+}
+#FName {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right;        
+}
+#FN {width:245px;
+}
+#Adress {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right;         
+}
+#City {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right;  
+}
+#State {width:50px;
+}
+#ZIP {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right; 
+}
+#post {width:85px;
+}
+#Country {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right; 
+}
+#CountryChoice {width:185px;
+}
+#Phone {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right; 
+}
+#CCode {width:30px;
+}
+#ACode {width:40px;
+}
+#NCode {width:60px;
+}
+#Email {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right; 
+}
+#EmailInput {width:245px;
+}
+#BDate {
+        font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right; 
+}
+#Month {width:20px;
+}
+#Day {width:20px;
+}
+#Year {width:40px;
+}
+#Gender {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right; 
+}
+#Gen {width:140px;
+}
+#SDate {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right; 
+}
+#Comments {font-family:'Times New Roman';
+        font-weight:bold; 
+        text-align:right;
+}
+#FinalButtons {background-color:lawngreen;
+}
+#FinalButtons td{text-align:center;
+}
+body {
+}

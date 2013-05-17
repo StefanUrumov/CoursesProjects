@@ -1,0 +1,112 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+namespace FallingRocksGame
+{
+    struct Position
+    {
+        public int row;
+        public int col;
+
+        public Position(int row, int col)
+        {
+            this.row = row;
+            this.col = col;
+        }
+    }
+
+    class FallingRocks
+    {
+        static void Main()
+        {
+            byte right = 0; // the numbers are == index of the array directions
+            byte left = 1;
+
+
+            Position[] directions = new Position[]
+            {
+                new Position(0, 1),  // right == [1] array element
+                new Position(0, -1), // left  == [2] array element
+            };
+
+            double sleepTime = 150;
+
+            int direction = right; // current dwarf direction
+
+            Random randomNumbersGenerator = new Random();
+            Console.BufferHeight = Console.WindowHeight;
+            Console.BufferWidth = Console.WindowWidth;
+
+            Queue<Position> dwarfBody = new Queue<Position>();
+            for (int i = 0; i <= 1; i++)
+            {
+                dwarfBody.Enqueue(new Position(Console.WindowHeight - 2, i));
+            }
+
+            foreach (Position position in dwarfBody)
+            {
+                Console.SetCursorPosition(position.col, position.row);
+                Console.ForegroundColor = ConsoleColor.Green;                
+                Console.Write("0");                
+            }
+
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo userInput = Console.ReadKey();
+
+                    if (userInput.Key == ConsoleKey.LeftArrow)
+                    {
+                        direction = left; // first element of our array - directions
+                    }
+                    if (userInput.Key == ConsoleKey.RightArrow)
+                    {
+                        direction = right;
+                    }
+                }
+
+                Position dwarfHead = dwarfBody.Last(); // old dwarf head
+                Position nextDirection = directions[direction];
+                Position dwarfNewHead = new Position(dwarfHead.row + nextDirection.row,
+                    dwarfHead.col + nextDirection.col);
+
+                // lets the dwarf pass the window's borders
+                if (dwarfNewHead.col >= Console.WindowWidth)
+                {                    
+                    dwarfNewHead.row = Console.WindowHeight - 2; // bounce the dwarf backwards
+                    dwarfNewHead.col = Console.WindowWidth - 1;
+                    direction = left;
+                }
+                else if (dwarfNewHead.col <= Console.WindowWidth - Console.WindowWidth)
+                {
+                    dwarfNewHead.row = Console.WindowHeight-2; 
+                    dwarfNewHead.col = 0;
+                    direction = right;
+                }
+
+                Console.SetCursorPosition(dwarfHead.col, dwarfHead.row);
+                Console.ForegroundColor = ConsoleColor.Green;                
+                Console.Write("0");
+
+                dwarfBody.Enqueue(dwarfNewHead);
+                Console.SetCursorPosition(dwarfNewHead.col, dwarfNewHead.row);
+                Console.ForegroundColor = ConsoleColor.Red;
+                if (direction == right) Console.Write(">"); //the head of the dwarf  
+                if (direction == left) Console.Write("<");
+
+                // moving...
+                Position last = dwarfBody.Dequeue();
+                Console.SetCursorPosition(last.col, last.row);
+                Console.Write(" ");
+
+                Thread.Sleep((int)sleepTime);
+            }
+
+        }
+    }
+}

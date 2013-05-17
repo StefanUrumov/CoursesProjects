@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Compare two char arrays</title>
+     <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <!--<div class="input">
+            <label for="num">Enter number:</label>
+            <input type="text" id="num" />
+        </div>-->
+
+        <div id="input-button">
+            <input type="button" onclick="findFirstArray()" value="Show first array"/>
+        </div>
+    </div>
+
+    <div id="console"></div>
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findFirstArray() {
+            //var value = jsConsole.readFloat('#num');
+
+            var charArr = "some string";
+            var charArr2 = "another string";
+
+            var i;
+            var fiLen = charArr.length;
+            var secLen = charArr2.length;
+            var areEqual = true;
+
+            if (fiLen === secLen) {
+
+                for (i = 0; i < fiLen; i++) {
+                    if (charArr[i] != charArr2[i]) {
+                        areEqual = false;
+                        break;
+                    }
+                }
+            }
+            else {
+                areEqual = false;
+                jsConsole.writeLine("The two arrays are with different lenght!");
+            }
+
+            jsConsole.writeLine("The arrays are equal: " + areEqual)
+            jsConsole.writeLine();
+        }
+    </script>
+
+</body>
+</html>

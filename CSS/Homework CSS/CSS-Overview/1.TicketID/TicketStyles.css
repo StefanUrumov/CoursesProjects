@@ -1,0 +1,28 @@
+﻿.dataOrder {font-family:'Times New Roman';
+}
+#content {background-color:grey;
+}
+#Ticket {color:lightgrey;         
+         font-size:1.4em;
+}
+table tr td[title *= Col] {color:white;
+}
+#greenDot {width:10px; height:10px;
+}
+#NAS {text-align:right;
+      color:red;   
+}
+#user {color:bisque;
+}
+#mail {color:bisque;
+}
+#hours {color:darkgrey;
+}
+#action {color:darkgrey;
+}
+#post {color:bisque;
+}
+#NextStatus {color:darkorange;
+}
+body {background-color:grey;
+}

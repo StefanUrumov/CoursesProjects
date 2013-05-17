@@ -1,0 +1,6 @@
+//select "type text"  in text filed
+input[type="text"]{
+}
+
+//vertical-align text in let's say div
+line-height: 100px; //or half of div height to be in the middle

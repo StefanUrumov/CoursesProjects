@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find third bit</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="inputdiv">
+		<div class="input">
+			<label for="tb-first">Number: </label>
+			<input type="text" id="tb-first"/>
+		</div>
+		<div id="inputbutton">
+			<a href="#" onclick="onFindBiggerButtonClick()">Third bit is</a>
+		</div>
+	</div>
+	<div id="console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>		  
+	<script>
+
+	    function onFindBiggerButtonClick() {
+	        var Number = jsConsole.readInteger("#tb-first");
+
+	        var p = 3;
+	        var mask = 1 << p;
+	        var result = Number & mask;
+	        var bit = result >> p;
+
+	        jsConsole.writeLine("Third bit of number " + Number.toString(2) + " is:" + bit);
+
+	    }
+	</script>			
+</body>
+</html>

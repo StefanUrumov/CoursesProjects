@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F4FDD245-56FB-4426-992B-152C1353D0C5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_07.AnyNumeralSystem</RootNamespace>
+    <AssemblyName>07.AnyNumeralSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConvertToBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\01.DecimalToBinary\01.DecimalToBinary.csproj">
+      <Project>{17a393ab-03b5-4de8-8185-b8cfa9058ab0}</Project>
+      <Name>01.DecimalToBinary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\02.BinaryToDecimal\02.BinaryToDecimal.csproj">
+      <Project>{2137eea5-f609-4ed9-a7ef-ed4b696d436b}</Project>
+      <Name>02.BinaryToDecimal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\03.DecimalToHex\03.DecimalToHex.csproj">
+      <Project>{9558a986-c056-4e58-9ec9-a069c3687f26}</Project>
+      <Name>03.DecimalToHex</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\04.HexToDecimal\04.HexToDecimal.csproj">
+      <Project>{2e78407a-27ec-4463-98c2-07225cedea25}</Project>
+      <Name>04.HexToDecimal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\05.HexToBinary\05.HexToBinary.csproj">
+      <Project>{727fc343-59a8-440e-a23e-db52366367b5}</Project>
+      <Name>05.HexToBinary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\06.BinaryToHex\06.BinaryToHex.csproj">
+      <Project>{9b400df4-426e-4617-9c10-3f9a56064ce4}</Project>
+      <Name>06.BinaryToHex</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

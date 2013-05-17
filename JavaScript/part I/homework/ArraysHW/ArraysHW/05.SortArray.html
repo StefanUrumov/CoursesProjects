@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sorting an array of numbers</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <h3>Sorting an array means to arrange its elements in increasing order.<br />
+             We must use the "selection sort" algorithm. Enter numbers using ONE whitespace</h3>
+       
+        <div class="input">
+            <label for="inputArr">Your array:</label>
+            <input type="text" id="inputArr" />
+        </div>
+
+        <div id="input-button">
+            <input type="button" onclick="findSortedArr()" value="Show sorted array"/>
+        </div>
+    </div>
+
+    <div id="console"></div>
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findSortedArr() {
+            var input = document.getElementById("inputArr").value;
+            var myArr = input.split(' ');
+
+            // sorts the array through selection sort and returns it
+            function arraySortSS(myArr) {
+                var i, startIndex, smallest, smallestPos, tempEl,
+                    len = myArr.length,
+                    startIndex = 0;
+
+                while (startIndex < len - 1) {
+                    smallest = myArr[startIndex];
+                    smallestPos = startIndex;
+
+                    for (i = startIndex + 1; i < len; i += 1) {
+                        if (myArr[i] < smallest) {
+                            smallest = myArr[i];
+                            smallestPos = i;
+                        }
+                    }
+                    // swap the position of the smallest and the element on startIndex pos
+                    tempEl = myArr[startIndex]; // value of the element that is substituted with the smallest one
+                    myArr[startIndex] = smallest; // put the smallest element onto the currently dealt with position
+                    myArr[smallestPos] = tempEl; // set the temporarily stored element onto the position the smallest was
+
+                    startIndex++;
+                }
+                return myArr;
+            }
+
+            function arraySelectionSortTester(myArr) {
+                jsConsole.writeLine('Array:  ', myArr);
+                var arr1 = myArr.slice(0, myArr.length);	// ...NC (otherwise the console prints the sorted array ???)
+                jsConsole.writeLine('Sorted: ', arraySortSS(arr1))
+            }
+
+        }
+    </script>
+
+</body>
+</html>

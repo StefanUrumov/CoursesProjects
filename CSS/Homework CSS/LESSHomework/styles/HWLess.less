@@ -1,0 +1,207 @@
+body,header,h1,a,p,form,div,a,li,ul,footer,aside,nav,header,label,input
+{
+        padding: 0px;
+        margin: 0px;
+}
+//mixins
+ 
+.clearfix() {
+  zoom: 1; // For IE 6/7 (trigger hasLayout)
+ 
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+ 
+  &:after {
+    clear:both;
+  }
+}
+ 
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+ 
+.linear-gradient(@color1:#ccc, @color2:#fff, @stop1:0, @stop2:100%, @deg:0deg) {
+  @old-deg: @deg + 90deg;
+  background-color: @color2;
+  background: -webkit-linear-gradient(@old-deg, @color1 @stop1, @color2 @stop2);
+  background:    -moz-linear-gradient(@old-deg, @color1 @stop1, @color2 @stop2);
+  background:     -ms-linear-gradient(@old-deg, @color1 @stop1, @color2 @stop2);
+  background:      -o-linear-gradient(@old-deg, @color1 @stop1, @color2 @stop2);
+  background:         linear-gradient(@deg, @color1 @stop1, @color2 @stop2);
+  filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000')";
+}
+//end mixins
+ 
+//variables
+        @hihgpurple: #a43af4;
+//end variables
+body {
+    font: verdana;
+    .linear-gradient(@hihgpurple,silver, 80%, 100%, 0deg);
+    padding: 15px;
+    color: white;
+ 
+    header {
+        .clearfix();
+ 
+ 
+        #header-container {
+                        margin-bottom: 0px;
+            #logo-container {
+                                padding-top: 23px;
+                float: left;
+ 
+                h1 {
+                    padding: 10px;
+ 
+                    a {
+                        img {
+                        }
+                    }
+                }
+            }
+        }
+ 
+        #reg-form-container {
+            float: right;
+                        padding-top: 0px;
+                        padding-bottom: -50px;
+            form {
+                margin-top: 30px;
+                                margin-right: 50px;
+ 
+                div {
+                    position: relative;
+ 
+                    label {
+                        color: white;
+                        font-weight: bold;
+                    }
+ 
+                    input {
+                        border: 1px solid black;
+                        .border-radius(10px);
+                        background: lighten(@hihgpurple, 10%);
+                        margin-bottom: 5px;
+                        height: 20px;
+                        width: 130px;
+ 
+                        &:last-of-type {
+                            margin-left: 3px;
+                        }
+                    }
+                }
+ 
+                button {
+                    border-top: 1px solid @hihgpurple;
+                    border-bottom: 1px solid white;
+                    border-left: 1px solid @hihgpurple;
+                    border-right: 1px solid white;
+                    padding: 5px;
+                                        margin-bottom: -20px;
+                    font-weight: bold;
+                    color: white;
+                    .border-radius(10px);
+                    .linear-gradient(white,lighten(@hihgpurple, 10%), 0, 50%, 0deg);
+                }
+            }
+        }
+ 
+        nav {
+            font-weight: bold;
+                        width: 75%;
+                border: 1px;
+                .border-radius(20px);
+                display: inline-block;
+                margin: 20px;
+                list-style: none;
+                padding-left: 10px;
+                .linear-gradient(white,lighten(@hihgpurple, 10%), 0, 50%, 0deg);
+ 
+            #main-nav-list {
+               
+                li {
+                                        display: inline-block;
+                    float: left;
+                    margin: 10px;
+ 
+                    &:hover {
+                       ul
+                                                {
+                                                        display:block;
+                                                        position:absolute;
+                                                        border:1px solid white;
+                                                        .border-radius(10px);                                          
+                                                }
+                    }
+ 
+                    a {
+                        text-decoration: none;
+                        color: white;
+ 
+                        &:hover {
+                            text-decoration: underline;
+                            color: black;
+                        }
+                    }
+ 
+                    ul {
+                        display: none;
+ 
+                        li {
+							float:none;
+                            a {
+                                                               
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ 
+    section {
+                .clearfix();
+        article {
+            header {
+                h1 {
+                }
+            }
+ 
+            p {
+            }
+ 
+            footer {
+                p {
+                }
+            }
+        }
+    }
+ 
+    aside {
+                .clearfix();
+        ul {
+            li {
+                h2 {
+                }
+ 
+                p {
+                    a {
+                    }
+                }
+ 
+                ul {
+                    li {
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Max Sequence Equal Elements</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <h3>To find the maximal sequence of equal elements in an array.<br />
+            Please input array values separated by a single white space :)</h3>
+       
+        <div class="input">
+            <label for="inputArr">Your array:</label>
+            <input type="text" id="inputArr" />
+        </div>
+
+        <div id="input-button">
+            <input type="button" onclick="findMaxSeqEl()" value="Show max equal sequance"/>
+        </div>
+    </div>
+
+    <div id="console"></div>
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findMaxSeqEl() {
+            //var value = jsConsole.readFloat('#num');
+
+            var input = document.getElementById("inputArr").value;
+            var myArr = input.split(' ');
+
+            var sequence = 1;
+            var maxSequence = 0;
+            var bestValue = 0;
+            var counter = 0;
+
+            for (var index = 0; index < myArr.length - 1; index++) {
+                if (myArr[index] == myArr[index + 1]) {
+                    sequence++;
+                    if (sequence > maxSequence) {
+                        maxSequence = sequence;
+                        bestValue = myArr[index];
+                    }
+                }
+                else {
+                    sequence = 1;
+                }
+            }
+
+            jsConsole.writeLine("The maximal sequence of equal elements is: ");
+            while (counter < maxSequence) {
+                jsConsole.write(bestValue + " ");
+                counter++;
+            }
+
+            jsConsole.writeLine();
+
+        }
+    </script>
+</body>
+</html>

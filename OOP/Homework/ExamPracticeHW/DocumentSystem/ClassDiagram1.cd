@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DocumentSystem" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAAAAAIAAAAAAhAAAAAoAAAgAAAAgBkAEAIA=</HashCode>
+      <FileName>DocumentSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DocumentSystem.BinaryDocument">
+    <Position X="4.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BinaryDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DocumentSystem.Document">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAgAAgAAAAAAAAAQAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Document.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DocumentSystem.EncyptableDocument">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAAAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EncyptableDocument.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DocumentSystem.OfficeDocument">
+    <Position X="0.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OfficeDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DocumentSystem.MultimediaDocument">
+    <Position X="6.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MultimediaDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DocumentSystem.TextDocument">
+    <Position X="8.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>TextDocument.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DocumentSystem.PdfDocument">
+    <Position X="4.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PdfDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DocumentSystem.WordDocument">
+    <Position X="2.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>WordDocument.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DocumentSystem.ExcelDocument">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ExcellDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DocumentSystem.AudioDocument">
+    <Position X="6" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AudioDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DocumentSystem.VideoDocument">
+    <Position X="9" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>VideoDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

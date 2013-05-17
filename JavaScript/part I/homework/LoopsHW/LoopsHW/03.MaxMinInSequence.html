@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Max and min number from a sequence of numbers</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <!--<div class="input">
+            <label for="num">Enter number:</label>
+            <input type="text" id="num" />
+        </div>-->
+
+        <div id="input-button">
+            <input type="button" onclick="findBiggest()" value="Find Min/Max"/>
+        </div>
+    </div>
+
+    <div id="console"></div>
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findBiggest() {
+            //var value = jsConsole.readFloat('#num');
+
+            var numArr = new Array(50, 36, 12, 25, 14, 100, 0, 1000, 800);
+            
+            jsConsole.writeLine("If this is the number sequence: ")
+            var i;
+            for (i = 0; i < numArr.length; i++) {
+                jsConsole.writeLine(numArr[i]);
+            }
+
+            numArr.sort(function (a, b) { return a - b });
+
+            jsConsole.writeLine("The max number is: ");
+            jsConsole.writeLine(numArr[numArr.length - 1]);
+
+
+            jsConsole.writeLine("The min number is: ");
+            jsConsole.writeLine(numArr[0]);
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find if poit is in the circle</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="x">Enter point x:</label>
+            <input type="text" id="x" />
+
+            <label for="y">Enter point y:</label>
+            <input type="text" id="y" />
+           
+        </div>
+        <div id="input-button">
+            <a href="#" onclick="findPoint()">Find point</a>
+        </div>
+    </div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function findPoint() {
+            var x = jsConsole.readFloat('#x');
+            var y = jsConsole.readFloat('#y');
+            var r = 5;
+
+            if ((x * x + y * y) < r * r) {
+                jsConsole.writeLine("The point is in the circle K(0,5)!");
+            }
+            else {
+                jsConsole.writeLine("The point is out of the circle K(0,5)!");
+            }
+        }
+    </script>
+</body>
+</html>

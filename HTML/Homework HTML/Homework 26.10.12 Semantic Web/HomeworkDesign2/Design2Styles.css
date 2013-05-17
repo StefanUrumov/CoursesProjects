@@ -1,0 +1,31 @@
+﻿header h1 {font-family:'Times New Roman';
+            font-size:x-large;            
+}
+hr {width:100%;
+    height:2px;
+}
+#signup {font-weight:lighter;
+         font-size:medium;
+}
+#finame {list-style:none;
+         text-align:left;
+}
+#laname {list-style:none;
+         text-align:left;
+}
+#mail {list-style:none;
+         text-align:left;
+}
+#pass {list-style:none;
+         text-align:left;
+}
+#plusmin {width:13px;
+          height:13px;
+}
+#already {font-weight:lighter;
+}
+#search {font-size:medium;
+         
+}
+body {
+}

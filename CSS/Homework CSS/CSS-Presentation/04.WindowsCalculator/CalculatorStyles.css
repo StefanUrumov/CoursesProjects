@@ -1,0 +1,195 @@
+﻿#content {
+    width:430px;
+    height:450px;
+    border-radius: 10px;            
+    border: 1px solid black;
+    background-color:lightgrey;
+}
+body{
+ 
+    color: black;
+    font: 12px/1.2 Segoe UI, sans-serif;
+}
+
+#content h1 {
+    font-size:small;
+    font-weight:400;
+    vertical-align:central;
+}
+#Mini {float:right;
+    background-image:url('http://prikachi.com/images/721/5745721g.jpg');
+    width:30px;
+    height:20px; 
+}
+    #Mini:hover {
+    background-color:blue;
+    }
+#restore {
+    float:right;
+    background-image:url('http://prikachi.com/images/745/5745745N.jpg');
+    width:30px;
+    height:20px; 
+}
+#exit {
+     float:right;
+    background-image:url('http://prikachi.com/images/750/5745750n.jpg');
+    width:45px;
+    height:20px;
+    padding-left:5px;
+    border-top-right-radius:7px;
+}
+#help h1 {
+    font-size:small;
+    font-weight:400;
+    padding: 0px;
+    margin: 0 auto;
+}
+#help{  
+    margin-left:0;
+    border-bottom-color: black;
+    border-bottom-width:400px;
+    text-align:left;
+    height: 15px;
+}
+#line {
+   margin-left:0;
+    height: 1px;
+    width:400px;
+    background-color:grey;
+}
+
+#inner {
+    width:390px;
+    height:390px;
+    border-radius: 0px;            
+    border: 1px solid black;
+    padding: 0 10px 5px;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(#F0F0F0 0, #D9E4F1 100px);
+    background:    -moz-linear-gradient(#F0F0F0 0, #D9E4F1 100px);
+    background:      -o-linear-gradient(#F0F0F0 0, #D9E4F1 100px);
+    background:         linear-gradient(#F0F0F0 0, #D9E4F1 100px);
+        
+}
+
+#display {
+    width:380px;
+    height:25px;
+    text-align:right;
+    font-size:20px;
+    padding: 15px 5px 5px;
+    background: -webkit-linear-gradient(#D9E4F1, #FFFFFF);
+    background:    -moz-linear-gradient(#D9E4F1, #FFFFFF);
+    background:      -o-linear-gradient(#D9E4F1, #FFFFFF);
+    background:         linear-gradient(#D9E4F1, #FFFFFF);
+}
+
+#bitwise {
+    width:390px;
+    height:70px;
+    border-radius: 0px;            
+    border: 1px solid grey;    
+}
+
+    #bitwise table tr td {
+        padding-left:20px;
+        padding-top:0px;
+    }
+
+.bitGrey {
+    color:grey;
+}
+
+#NumericSys {
+    width:72px;
+    height:189px;
+    float:left;
+}
+#NumericSys1 {
+    width:70px;
+    border-radius: 0px;            
+    border: 1px solid grey;
+    border-color:grey;   
+}
+#NumericSys2 {
+    width:70px;
+    border-radius: 0px;            
+    border: 1px solid grey;
+    border-color:grey;    
+}
+#buttonsGrid {
+	float: right;    
+    width:310px;
+    height:205px;    
+}
+.notUsed {
+    width:35px;
+    height:28.5px;
+    border: 1px solid grey;
+    border-color:grey;  
+    text-align:center;
+    font-size:16px; 
+}
+.buttonCalc {
+    width:35px;
+    height:30px;
+    background-color:#E2EAF3;
+    background: linear-gradient(#F0F6FB 0%, #E2EAF3 49%, #D5E0ED 50%, #D7E2EF 100%)
+}
+    .buttonCalc:hover {
+    background-color:#edcd50;
+    }
+
+#backArrow {
+    width:35px;
+    height:30px;
+    background-image:url('http://prikachi.com/images/657/5745657O.jpg');
+}
+#backArrow:hover {
+    background-color:#edcd50;
+}
+#plusMin {
+     width:35px;
+    height:30px;
+    background-image:url('http://prikachi.com/images/678/5745678A.jpg');
+
+}
+
+#sqRoot {
+    background-image:url('http://prikachi.com/images/685/5745685G.jpg');
+    width:35px;
+    height:28.5px;
+    border: 1px solid grey;
+    border-color:grey;  
+    text-align:center;
+    font-size:16px; 
+}
+#percent {
+    background-image:url('http://prikachi.com/images/689/5745689q.jpg');
+    width:39px;
+    height:28.5px;
+    border: 1px solid grey;
+    border-color:grey;  
+    text-align:center;
+    font-size:16px; 
+}
+#equal {
+    width:35px;
+    height:65px;
+    background-color:#E2EAF3;
+    background: linear-gradient(#F0F6FB 0%, #E2EAF3 49%, #D5E0ED 50%, #D7E2EF 100%)
+
+}
+    #equal:hover {
+    background-color:#edcd50;
+    }
+#Zero {
+    width:74px;
+    height:35px;
+    background-color:#E2EAF3;
+    background: linear-gradient(#F0F6FB 0%, #E2EAF3 49%, #D5E0ED 50%, #D7E2EF 100%)
+
+}
+#Zero:hover {
+    background-color:#edcd50;
+    }

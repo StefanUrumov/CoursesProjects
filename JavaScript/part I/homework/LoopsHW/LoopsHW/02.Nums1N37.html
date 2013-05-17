@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+     <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+      <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="inputdiv">
+		<div class="input">
+			<label for="num">Enter number: </label>
+			<input type="text" id="num"/>
+		</div>	
+
+		<div id="inputbutton">
+			<input type="button" onclick="onNumberClick()" value="Print from 1 to number"/>            
+		</div>
+	</div>
+
+	<div id="console">
+	</div>
+	
+    <script src="scripts/js-console.js">	  
+	</script>
+    		  
+	<script>
+	    function onNumberClick(num) {
+	        var input = jsConsole.readFloat('#num');
+
+	        jsConsole.writeLine("Numbers from 1 to number not divisible by 3 and 7 at the same time: ", input);
+
+	        for (var i = 1; i <= input; i++) {
+	            if ((i % 3 != 0) && (i % 7 != 0)) {
+	                jsConsole.writeLine(i);
+	            }	            
+	        }
+	    }
+	</script>	
+
+</body>
+</html>

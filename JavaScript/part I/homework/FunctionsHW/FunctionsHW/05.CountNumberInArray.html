@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Count number in array</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        countNumber();
+
+        function countNumber(){
+
+            var arr = new Array (1, 4, 6, 7, 8, 4, 3, 1, 1, 1, 1, 1, 2, 3, 4, 4, 5, 5, 6, 6);
+
+            var count = 0;
+
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] === arr[i -1]) {
+                    count++;
+                }
+            }
+
+
+            jsConsole.writeLine("The number 1 appears - " + count +" times");
+        }
+    </script>
+
+</body>
+</html>

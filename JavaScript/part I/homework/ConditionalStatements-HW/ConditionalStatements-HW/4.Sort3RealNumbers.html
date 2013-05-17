@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sort three real numbers</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="num">Enter real number:</label>
+            <input type="text" id="num" />
+
+            <label for="num2">Enter second real number:</label>
+            <input type="text" id="num2" />
+
+            <label for="num3">Enter third real number:</label>
+            <input type="text" id="num3" />
+        </div>
+        <div id="input-button">
+            <input type="button" onclick="doSort()" value="Sort numbers"/>
+        </div>
+    </div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function doSort() {
+            var input = jsConsole.readFloat('#num');
+            var input2 = jsConsole.readFloat('#num2');
+            var input3 = jsConsole.readFloat('#num3');
+            var buffer = 0;
+            var i;
+
+            for (i = 0; i < 2; i++) {
+                if (input < input2) {
+                    buffer = input2;
+                    input2 = input;
+                    input = buffer;
+                    if (input < input3) {
+                        buffer = input3;
+                        input3 = input;
+                        input = buffer;
+                    }
+                }
+                else {
+                    if (input2 < input3) {
+                        buffer = input3;
+                        input3 = input2;
+                        input2 = buffer;
+                    }
+                }
+            }
+
+            var result = 'Sorted ';
+            result += input + ' ';
+            result += input2 + ' ';
+            result += input3 + ' ';
+
+            jsConsole.writeLine(result);
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿#music {
+    background-color:#e1e9ea;
+    width: 500px;
+    height: 600px;
+    border: 2px solid grey;
+    border-radius: 25px;
+}
+    #music h1 {
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight:lighter;
+    }
+
+    #music h4 {
+    font-size: 15px;
+    font-weight:lighter;
+    }
+
+.categories {
+    display: inline-block;
+    background-color:#ffffff;
+    width: 480px;
+    height: 150px;
+    border: 2px solid grey;
+    margin: 10px;
+}
+
+    .categories img {
+    width: 160px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    }
+
+.MusicButtons {
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            padding: 0 10px 0 25px;
+            color: #fff;
+            text-decoration: none;
+            font-size:17px;
+            line-height: 1.5em;
+            float:right;
+            width:80px;
+            height:35px;
+            box-shadow: inset 15px 0 0 #8A0000;
+
+
+            /* IE10 Consumer Preview */ 
+        background-image: -ms-linear-gradient(top left, #700307 0%, #E80E2B 100%);
+        
+        /* Mozilla Firefox */ 
+        background-image: -moz-linear-gradient(top left, #700307 0%, #E80E2B 100%);
+        
+        /* Opera */ 
+        background-image: -o-linear-gradient(top left, #700307 0%, #E80E2B 100%);
+        
+        /* Webkit (Safari/Chrome 10) */ 
+        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #700307), color-stop(1, #E80E2B));
+        
+        /* Webkit (Chrome 11+) */ 
+        background-image: -webkit-linear-gradient(top left, #700307 0%, #E80E2B 100%);
+        
+        /* W3C Markup, IE10 Release Preview */ 
+        background-image: linear-gradient(to bottom right, #700307 0%, #E80E2B 100%);
+        }
+        .MusicButtons:hover { text-decoration: underline; }
+
+body
+{
+}

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Enter the coefficients </title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="num">Enter number:</label>
+            <input type="text" id="num" />
+
+            <label for="num2">Enter second number:</label>
+            <input type="text" id="num2" />
+
+            <label for="num3">Enter third number:</label>
+            <input type="text" id="num3" />
+        </div>
+        <div id="input-button">
+            <input type="button" onclick="doCalc()" value="Calculate result"/>
+        </div>
+    </div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+    
+    
+
+	<script>
+
+	    function doCalc() {
+	        var a = jsConsole.readFloat("#num");
+	        var b = jsConsole.readFloat("#num2");
+	        var c = jsConsole.readFloat("#num3");
+	        var x1;
+	        var x2;
+	        var determinant;
+	        if (isNaN(a) || isNaN(b) || isNaN(c)) {
+	            jsConsole.writeLine("a, b, c must be a number");
+	        }
+	        else {
+	            jsConsole.writeLine("Roots of ax" + '\u00B2' + "+bx+c:");
+	            if (a != 0) {
+	                determinant = b * b - 4 * a * c;
+	                if (determinant > 0) {
+	                    x1 = (-b + Math.sqrt(determinant)) / (2 * a);
+	                    x2 = (-b - Math.sqrt(determinant)) / (2 * a);
+	                    jsConsole.writeLine("x1= " + x1 + "; x2= " + x2);
+	                }
+	                if (determinant == 0) {
+	                    x1 = (-b) / (2 * a);
+	                    jsConsole.writeLine("x1,2 = " + x1);
+	                }
+	                if (determinant < 0) {
+	                    jsConsole.writeLine("There is no real roots");
+	                }
+	            }
+	            else {
+	                x1 = (-c) / b;
+	                jsConsole.writeLine("x1,2 = " + x1);
+	            }
+	        }
+
+	    }
+	</script>			
+
+</body>
+</html>

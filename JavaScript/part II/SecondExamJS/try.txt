@@ -1,0 +1,70 @@
+function tryMe() {
+    function controlsObj() { };
+    controlsObj.prototype.getImageGallery = getImageGallery;
+    var controls = new controlsObj();
+
+    function getImageGallery(albumName) {
+        this.galleryName = albumName;
+        this.addImage = addImage;
+        this.addAlbum = addAlbum;
+
+        getImageGallery.prototype.addIm = addImage;
+
+        var album = document.getElementById('imageAlbumHolder');
+        //var album = document.getElementById(this.galleryName);
+
+        function addImage(imageName, imagePath) {
+            this.imgName = document.createTextNode(imageName);
+            this.imgPath = imagePath;
+            var imageDiv = document.createElement('Div');
+            var img = document.createElement('img');
+            //img.src = 'images/image.png';
+            img.src = this.imgPath;
+            img.setAttribute("height", "70");
+            img.setAttribute("width", "70");
+            imageDiv.appendChild(this.imgName);
+            imageDiv.appendChild(img);
+            album.appendChild(imageDiv);
+
+            return album;
+        }
+
+        function addAlbum(albumName) {
+            this.albName = document.createTextNode(albumName);
+            var currentAlbum = document.createElement('Div');
+            var currAlbStyle = currentAlbum.style;
+
+            currAlbStyle.border = '1px solid black';
+            currAlbStyle.width = '500px';
+            currAlbStyle.height = '500px';
+
+            var albumText = document.appendChild(this.albName);
+            currentAlbum.appendChild(albumText);
+            album.appendChild(currentAlbum);
+        }
+
+        //return album;
+    };
+    
+    var gallery = controls.getImageGallery('imageAlbumHolder');
+    gallery.addImage('JsNinja', 'images/image.png');
+    var ninjasAlbum = new gallery.addAlbum('Ninjas');
+    ninjasAlbum.addImage('JsNinja2', 'images/image.png');
+
+};
+
+
+
+
+
+------------------------------------
+
+
+
+var elem = document.createElement("img");
+    elem.src = "images/image.png";
+    elem.setAttribute("height", "76");
+    elem.setAttribute("width", "104");
+    document.getElementById("imageAlbumHolder").appendChild(elem);
+
+    alert("Page is loaded");

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Odd or Even</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+
+    <div id="inputdiv">
+		<div class="input">
+			<label for="num">Enter number: </label>
+			<input type="text" id="num"/>
+		</div>
+		<div id="inputbutton">
+			<a href="#" onclick="findOddOrEvenClick()">Find Odd or Even</a>
+		</div>
+	</div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+
+    <script >
+        function findOddOrEvenClick() {
+            var numberInput = jsConsole.readFloat('#num');
+            if (num % 2 == 0) {
+                jsConsole.writeLine('The number is odd!');
+            }
+            else {
+                jsConsole.writeLine('The number is even!');
+            }
+        }
+    </script>
+
+</body>
+</html>
+

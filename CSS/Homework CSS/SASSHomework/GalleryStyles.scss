@@ -1,0 +1,51 @@
+﻿
+body ul {
+list-style-type: none;
+}
+
+body div ul li{
+display: inline-block;
+margin-right: 10px;
+}
+
+body div ul li img{
+width:150px;
+height: 150px;
+}
+
+body input[type="radio"] {
+display: none;
+-webkit-appearance: radio;
+box-sizing: border-box;
+}
+
+body input[type="radio"]:checked + label span {
+display: inline-block;
+width: 500px;
+height: 500px;
+background-repeat: no-repeat;
+margin-left: 40px;
+}
+
+body input[type="radio"]:checked + label #tigerSpan {
+background-image: url('http://1.bp.blogspot.com/-xkfWG7QaxHw/TWP3ZHrNzJI/AAAAAAAAARI/ZgcKTK5xqaY/s1600/animals_664.jpg');
+}
+body input[type="radio"]:checked + label #lionSpan {
+background-image: url('http://notlaura.com/wpfolio-two/wp-content/uploads/2011/07/Animals.jpg');
+}
+body input[type="radio"]:checked + label #monkeySpan {
+background-image: url('http://flatrock.org.nz/static/frontpage/assets/animals/conscious_animal.jpg');
+}
+body input[type="radio"]:checked + label #monkey2Span {
+background-image: url('http://images.fanpop.com/images/image_uploads/animals--the-animal-kingdom-248730_1024_768.jpg');
+}
+body input[type="radio"]:checked + label #fishSpan {
+background-image: url('http://infactcollaborative.com/wp-content/uploads/2012/01/Clown-fish-facts-Yellow-Percula-Clown.jpg');
+}
+body input[type="radio"]:checked + label #birdsSpan {
+background-image: url('http://www.funmag.org/wp-content/uploads/2012/12/romantic-animals-14.jpg');
+}
+
+label {
+cursor: default;
+}

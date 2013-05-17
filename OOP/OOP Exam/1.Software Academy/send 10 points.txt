@@ -1,0 +1,463 @@
+using System;
+using System.Linq;
+using System.Text;
+using System.CodeDom.Compiler;
+using Microsoft.CSharp;
+using System.Reflection;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace SoftwareAcademy
+{
+
+public abstract class Course : ICourse
+    {
+        private string name;
+        private string topic;
+        private IList<string> courseProgram; 
+
+        public string Name
+        {
+            get
+            {
+                return this.name = name;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("The name can not be null!");
+                }
+
+                this.name = value;
+                
+            }
+        }
+
+        public string Topic
+        {
+            get { return this.topic = topic; }
+            set 
+            {
+                 if(value == null)
+                {
+                    throw new ArgumentNullException("The name of the topic can not be null!");
+                }
+
+                this.name = value;                    
+            }
+        }
+
+        public ITeacher Teacher
+        {
+            get
+            {
+                return this.Teacher = Teacher;
+            }
+            set
+            {
+                //can be passed as null
+                this.Teacher = value;
+            }
+        }
+
+        protected IList<string> CourseProgram //TODO maybe protected?
+        {
+            get { return this.courseProgram = courseProgram; }
+            set { this.courseProgram = value; }
+        }
+
+        public void AddTopic(string topic)
+        {
+            CourseProgram = new List<string>();
+            CourseProgram.Add(Topic);
+        }
+    }
+
+
+ public class CourseFactory : ICourseFactory
+    {
+        public ITeacher CreateTeacher(string name)
+        {
+            ITeacher teacher = new Teacher(name);
+            return teacher;
+        }
+
+        public ILocalCourse CreateLocalCourse(string name, ITeacher teacher, string lab) //TODO maybe return type should be ICourse
+        {
+            ILocalCourse localCourse = new LocalCourse();
+            return localCourse;
+        }
+
+        public IOffsiteCourse CreateOffsiteCourse(string name, ITeacher teacher, string town)
+        {
+            IOffsiteCourse offsiteCourse = new OffsiteCourse();
+            return offsiteCourse;
+        }
+    }
+
+
+ public interface ICourse
+    {
+        string Name { get; set; }
+        ITeacher Teacher { get; set; }
+        void AddTopic(string topic);
+        string ToString();
+    }
+
+
+public interface ICourseFactory
+    {
+        ITeacher CreateTeacher(string name);
+        ILocalCourse CreateLocalCourse(string name, ITeacher teacher, string lab);
+        IOffsiteCourse CreateOffsiteCourse(string name, ITeacher teacher, string town);
+    }
+
+
+
+public interface ILocalCourse : ICourse
+    {
+        string Lab { get; set; }
+    }
+
+public interface IOffsiteCourse : ICourse
+     {
+         string Town { get; set; }
+     }
+
+
+ public interface ITeacher
+    {
+        string Name { get; set; }
+        void AddCourse(ICourse course);
+        string ToString();
+    }
+
+
+ class LocalCourse : ILocalCourse
+    {        
+        private string lab;
+        
+        public string Lab
+        {
+            get
+            {
+                return this.lab = lab;
+            }
+            set
+            {
+                if (value == null)
+                {                   
+                    throw new ArgumentNullException("The name of the lab can not be null!");
+                }
+
+                this.lab = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return this.Name;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("The name can not be null!");
+                }
+
+                this.Name = value;
+            }
+        }
+
+        public ITeacher Teacher
+        {
+            get
+            {
+                return this.Teacher = Teacher;
+            }
+            set
+            {
+                this.Teacher = value;
+            }
+        }
+
+        public IList<string> CourseProgram 
+        {
+            get { return this.CourseProgram = CourseProgram; }
+            set { this.CourseProgram = value; }
+        }
+
+        public void AddTopic(string topic)
+        {
+            CourseProgram = new List<string>();
+            CourseProgram.Add(topic);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+
+            bool first = true;
+            foreach (var course in CourseProgram)
+            {
+                if (course != null)
+                {
+                    if (!first)
+                    {
+                        result.Append(", ");
+                    }
+                    result.AppendFormat("{0}", course);
+                    first = false;
+                }
+            }
+
+            if (this.Teacher == null)
+            {
+                return String.Format("{0}: Name={1}; Topics=[{3}]; Lab={4}", this.GetType(), this.GetType().Name, result.ToString(), this.Lab);
+            }
+
+            if(result.ToString() == string.Empty)
+            {
+                return String.Format("{0}: Name={1}; Teacher={2}; Lab={4}", this.GetType(), this.GetType().Name, this.Teacher.Name, this.Lab);        
+              
+            }
+
+            return String.Format("{0}: Name={1}; Teacher={2}; Topics=[{3}]; Lab={4}", this.GetType(), this.GetType().Name, this.Teacher.Name, result.ToString(), this.Lab);        
+            
+
+        }
+
+    }
+
+
+ class OffsiteCourse : IOffsiteCourse
+    {
+        private string town;
+        
+        public string Town
+        {
+            get
+            {
+               return this.town;
+            }
+            set
+            {
+                if (value == null)
+                {                    
+                    throw new ArgumentNullException("The name of the town can not be null!");
+                }
+
+                this.town = value;               
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return this.Name;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("The name can not be null!");
+                }
+
+                this.Name = value;
+            }
+        }
+
+        public ITeacher Teacher
+        {
+            get
+            {
+                return this.Teacher = Teacher;
+            }
+            set
+            {
+                this.Teacher = value;
+            }
+        }
+
+        public IList<string> CourseProgram  
+        {
+            get { return this.CourseProgram = CourseProgram; }
+            set { this.CourseProgram = value; }
+        }
+
+        public void AddTopic(string topic)
+        {
+            CourseProgram = new List<string>();
+            CourseProgram.Add(topic);            
+        }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            
+            for (int index = 0; index < CourseProgram.Count; index++)
+            {
+                result.Append(CourseProgram[index]);
+                
+                if (index < CourseProgram.Count - 1)
+                {
+                    result.Append(", "); 
+                }                
+            }
+
+            if (this.Teacher == null)
+            {
+                return String.Format("{0}: Name={1}; Topics=[{3}]; Lab={4}", this.GetType(), this.GetType().Name, result.ToString(), this.Town);
+            }
+
+            if (result.ToString() == string.Empty)
+            {
+                return String.Format("{0}: Name={1}; Teacher={2}; Lab={4}", this.GetType(), this.GetType().Name, this.Teacher.Name, this.Town);
+
+            }
+
+            return String.Format("{0}: Name={1}; Teacher={2}; Topics=[{3}]; Lab={4}", this.GetType(), this.GetType().Name, this.Teacher.Name, result.ToString(), this.Town);
+        }
+    }
+
+
+    class Teacher : ITeacher
+    {
+        private string name;
+        private IList<ICourse> courses;
+        public string Name
+        {
+            get
+            {
+                return this.name = name;
+            }
+            set
+            {
+                if(value == null)
+                {
+                    throw new ArgumentNullException("The name can not be null!");
+                }
+
+                this.name = value;
+            }
+        }
+
+        public Teacher(string name)
+        {
+            this.name = name;
+        }
+
+        public Teacher(string name, IList<ICourse> courses)
+        {
+            this.name = name;
+            this.courses = courses;
+        }
+
+        public void AddCourse(ICourse course)
+        {
+            courses = new List<ICourse>();
+            courses.Add(course);
+        }
+
+        public override string ToString()
+        {
+            StringBuilder result = new StringBuilder();
+            
+            for (int index = 0; index < courses.Count; index++)
+            {
+                result.Append(courses[index]);
+            
+                if (index < courses.Count - 1)
+                {
+                    result.Append(", ");
+                }
+            }
+
+           if (courses.Count == 0)
+           {
+               return String.Format("Teacher: Name= {0}", this.Name); 
+           }
+           else
+           {
+                return String.Format("Teacher: Name= {0}; Courses=[{1}]", this.Name,  result.ToString());
+           }
+            
+        }
+       
+    }
+
+
+
+
+
+
+  public class SoftwareAcademyCommandExecutor
+    {
+        static void Main()
+        {
+            string csharpCode = ReadInputCSharpCode();
+            CompileAndRun(csharpCode);
+        }
+
+        private static string ReadInputCSharpCode()
+        {
+            StringBuilder result = new StringBuilder();
+            string line;
+            while ((line = Console.ReadLine()) != "")
+            {
+                result.AppendLine(line);
+            }
+            return result.ToString();
+        }
+
+        static void CompileAndRun(string csharpCode)
+        {
+            // Prepare a C# program for compilation
+            string[] csharpClass =
+            {
+                @"using System;
+                  using SoftwareAcademy;
+
+                  public class RuntimeCompiledClass
+                  {
+                     public static void Main()
+                     {"
+                        + csharpCode + @"
+                     }
+                  }"
+            };
+
+            // Compile the C# program
+            CompilerParameters compilerParams = new CompilerParameters();
+            compilerParams.GenerateInMemory = true;
+            compilerParams.TempFiles = new TempFileCollection(".");
+            compilerParams.ReferencedAssemblies.Add("System.dll");
+            compilerParams.ReferencedAssemblies.Add(Assembly.GetExecutingAssembly().Location);
+            CSharpCodeProvider csharpProvider = new CSharpCodeProvider();
+            CompilerResults compile = csharpProvider.CompileAssemblyFromSource(
+                compilerParams, csharpClass);
+
+            // Check for compilation errors
+            if (compile.Errors.HasErrors)
+            {
+                string errorMsg = "Compilation error: ";
+                foreach (CompilerError ce in compile.Errors)
+                {
+                    errorMsg += "\r\n" + ce.ToString();
+                }
+                throw new Exception(errorMsg);
+            }
+
+            // Invoke the Main() method of the compiled class
+            Assembly assembly = compile.CompiledAssembly;
+            Module module = assembly.GetModules()[0];
+            Type type = module.GetType("RuntimeCompiledClass");
+            MethodInfo methInfo = type.GetMethod("Main");
+            methInfo.Invoke(null, null);
+        }
+    }
+}

@@ -1,0 +1,183 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+namespace FallingRocksGame
+{
+    struct Position
+    {
+        public int row;
+        public int col;
+
+        public Position(int row, int col)
+        {
+            this.row = row;
+            this.col = col;
+        }
+    }
+
+    class FallingRocks
+    {
+        static void Main()
+        {
+            byte down = 0; // the numbers are == index of the array directions
+
+            Position[] goldDirections = new Position[]
+            {
+                new Position(1, 0),  // down == [1] array element
+                
+            };
+
+            double sleepTime = 150;
+
+            int goldDirection = down; // current glod direction
+
+            Random randomNumbersGenerator = new Random();
+            Console.BufferHeight = Console.WindowHeight;
+            Console.BufferWidth = Console.WindowWidth;
+
+            //1.
+            Queue<Position> goldBrick = new Queue<Position>();
+            for (int i = 0; i < 1; i++)
+            {
+                goldBrick.Enqueue(new Position(0, randomNumbersGenerator.Next(0, Console.WindowWidth)));
+            }
+
+            foreach (Position position in goldBrick)
+            {
+                Console.SetCursorPosition(position.col, position.row);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("$");
+            }
+
+            Queue<Position> goldBrick1 = new Queue<Position>();
+            for (int i = 0; i < 1; i++)
+            {
+                goldBrick1.Enqueue(new Position(0, randomNumbersGenerator.Next(0, Console.WindowWidth)));
+            }
+
+            foreach (Position position1 in goldBrick1)
+            {
+                Console.SetCursorPosition(position1.col, position1.row);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("$");
+            }
+
+            Queue<Position> goldBrick2 = new Queue<Position>();
+            for (int i = 0; i < 1; i++)
+            {
+                goldBrick2.Enqueue(new Position(0, randomNumbersGenerator.Next(0, Console.WindowWidth)));
+            }
+
+            foreach (Position position2 in goldBrick2)
+            {
+                Console.SetCursorPosition(position2.col, position2.row);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("$");
+            }
+            
+
+
+            while (true)
+            {
+                goldDirection = down; // first element of our array - directions
+
+
+                //2.
+                Position goldEnd = goldBrick.Last(); // old glod end
+                Position goldNextDirection = goldDirections[goldDirection];
+                Position goldNewEnd = new Position(goldEnd.row + goldNextDirection.row,
+                    goldEnd.col + goldNextDirection.col);
+
+                Position goldEnd2 = goldBrick2.Last(); // old glod end
+                Position goldNextDirection2 = goldDirections[goldDirection];
+                Position goldNewEnd2 = new Position(goldEnd2.row + goldNextDirection2.row,
+                    goldEnd2.col + goldNextDirection2.col);
+
+                Position goldEnd1 = goldBrick1.Last(); // old gold end
+                Position goldNextDirection1 = goldDirections[goldDirection];
+                Position goldNewEnd1 = new Position(goldEnd1.row + goldNextDirection1.row,
+                    goldEnd1.col + goldNextDirection1.col);
+
+
+
+
+                //3.
+                if (goldNewEnd.row >= Console.WindowHeight)
+                {
+                    goldNewEnd.row = 0;  // lets the gold to pass 
+                    goldNewEnd.col = randomNumbersGenerator.Next(0, Console.WindowWidth);  // the window borders
+                                                                                           // error top and left    
+                }
+                if (goldNewEnd1.row >= Console.WindowHeight)
+                {
+                    goldNewEnd1.row = 0;
+                    goldNewEnd1.col = randomNumbersGenerator.Next(0, Console.WindowWidth);
+                }
+
+                if (goldNewEnd2.row >= Console.WindowHeight)
+                {
+                    goldNewEnd2.row = 0;
+                    goldNewEnd2.col = randomNumbersGenerator.Next(0, Console.WindowWidth);
+                }
+
+
+
+
+
+                //4.
+                Console.SetCursorPosition(goldEnd.col, goldEnd.row);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("$");
+
+                Console.SetCursorPosition(goldEnd1.col, goldEnd1.row);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("$");
+
+                Console.SetCursorPosition(goldEnd2.col, goldEnd2.row);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("$");
+
+
+                //5.
+                goldBrick.Enqueue(goldNewEnd);
+                Console.SetCursorPosition(goldNewEnd.col, goldNewEnd.row);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                if (goldDirection == down) Console.Write("$"); //the head of the snake 
+
+                goldBrick1.Enqueue(goldNewEnd1);
+                Console.SetCursorPosition(goldNewEnd1.col, goldNewEnd1.row);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                if (goldDirection == down) Console.Write("$"); //the head of the snake 
+
+                goldBrick2.Enqueue(goldNewEnd2);
+                Console.SetCursorPosition(goldNewEnd2.col, goldNewEnd2.row);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                if (goldDirection == down) Console.Write("$"); //the head of the snake 
+
+
+
+
+
+                //6. moving...
+                Position last = goldBrick.Dequeue();
+                Console.SetCursorPosition(last.col, last.row);
+                Console.Write(" ");
+
+                Position last1 = goldBrick1.Dequeue();
+                Console.SetCursorPosition(last1.col, last1.row);
+                Console.Write(" ");
+
+                Position last2 = goldBrick2.Dequeue();
+                Console.SetCursorPosition(last2.col, last2.row);
+                Console.Write(" ");
+
+                Thread.Sleep((int)sleepTime);
+            }
+
+        }
+    }
+}

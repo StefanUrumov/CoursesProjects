@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find smallest and largest</title>
+    <link href="Properties/loops-demos/styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <input type="text" id="tb-object" />
+    <p><a href="#" id="btn-object" onclick="onUserChoice()">Enter either 1 for "window", 2 for "navigator" or 3 for "document"</a></p>
+ 
+    <div id="js-console">
+    </div>
+   
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function onUserChoice() {
+
+            var userChoice = jsConsole.read("#tb-object");
+
+            if (userChoice == 1) {
+                findSmallestAndLargestProperty(window);
+            }
+
+            if (userChoice == 2) {
+                findSmallestAndLargestProperty(navigator);
+            }
+
+            if (userChoice == 3) {
+                findSmallestAndLargestProperty(document);
+            }
+        }
+        function findSmallestAndLargestProperty(object) {
+            var smallest = 'zzz';
+            var biggest = 'AAA';
+            for (var property in object) {
+                if (property < smallest) {
+                    smallest = property;
+                }
+                if (property > biggest) {
+                    biggest = property;
+                }
+
+            }
+            jsConsole.writeLine("The smallest lexicographically property in " + object + " is " + smallest);
+            jsConsole.writeLine("The biggest lexicographically property in " + object + " is " + biggest);
+        }
+
+
+    </script>
+
+</body>
+</html>

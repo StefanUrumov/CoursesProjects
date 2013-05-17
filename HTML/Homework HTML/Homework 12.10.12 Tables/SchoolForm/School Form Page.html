@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>School Form Page </title>
+    <style style="text/css"></style>
+    <link type="text/css" rel="stylesheet" href="SchoolStyles.css" />
+    <script type="text/javascript" src="SchoolScript.js"></script>
+</head>
+<body>
+    <div id="content">
+        <form name="School Form" method="get" action="http://google.com">
+            <table>
+                <tr>
+                    <td> Member name:</td>                                        
+                    <td><input id="mn" type="text"/> </td>                    
+                    <td id="req"> *req</td>
+                </tr>
+                <tr>
+                    <td> Email:</td>                    
+                    <td> <input type="email" required="true"/> </td>
+                    <td id="req1"> *req</td>
+                </tr>
+                <tr>
+                    <td> School:</td>                    
+                    <td> <input type="text"/> </td>
+                    <td id="req2"> *req</td>
+                </tr>                
+            </table>
+        </form>        
+        <input type="image" onclick="ButtonAlert(event)" width="60" height="40" src="http://southernoaksestates.com/submit_button_green.gif" alt="submit button"/>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Extract all palindromes</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <div id="js-console"></div>
+	<script src="scripts/js-console.js"></script>
+
+	<script>
+
+	    findPalindromes();
+
+	    function findPalindromes() {
+
+	        var str = "Write a text with some palindromes in it e.g. lamal abba"; 
+	        jsConsole.writeLine(str);
+
+	        var strArr = str.split(' ');
+	        var i, k = 0;
+            		
+	        for (i = 0; i < strArr.length; i++) {
+	                        
+	                if (strArr[i].length % 2 == 0) {
+					
+	                    var fiHalf = strArr[i].substring(0, strArr.length / 2);
+	                    var secHalf = strArr[i].substring(strArr.length / 2, strArr[i].length);
+	                                    
+
+	                    var secHalfReversed = '';
+
+	                    for (var s = secHalf.length - 1; s >= 0; s--) {
+	                        secHalfReversed += secHalf[s];
+	                    }
+
+	                    if (fiHalf == secHalfReversed) {
+	                        jsConsole.writeLine(strArr[i]);
+	                    }
+	                
+					}
+	                else {
+
+	                 var firHalf = strArr[i].substring(0, strArr.length / 2);
+	                 var secondHalf = strArr[i].substring(strArr.length / 2 + 1, strArr[i].length);
+                   
+	                 var secondHalfReversed = '';
+                   
+	                 for (var s = secondHalf.length - 1; s >= 0; s--) {
+	                     secondHalfReversed += secondHalf[s];
+	                 }
+                   
+	                 if (firHalf == secondHalfReversed) {
+	                     jsConsole.writeLine(strArr[i]);
+	                 }
+                   
+	               
+	            	            
+	            }
+	            }
+	        }
+
+	</script>
+
+
+
+</body>
+</html>

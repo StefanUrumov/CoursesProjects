@@ -1,0 +1,71 @@
+<!doctype html><html><head><link rel=canonical
+href=http://www.dotnetperls.com><link rel=stylesheet
+href=1><title>Dot Net Perls: C#</title><meta
+name=description
+content="This site provides tutorials for programmers.
+It focuses on the C# language and the VB.NET language."></head><body><h1>C#</h1>
+<p id=p><a id=b href=array>Array</a>
+<a id=b href=class>Class</a>
+<a id=b href=collections>Collections</a>
+<a id=b href=file>File</a>
+<a id=b href=string>String</a>
+<a id=b href=net>.NET</a>
+<a href=algorithm>Algorithm</a>
+<a href=asp>ASP.NET</a>
+<a href=cast>Cast</a>
+<a href=compression>Compression</a>
+<a href=data>Data</a>
+<a href=delegate>Delegate</a>
+<a href=directive>Directive</a>
+<a href=enum>Enum</a>
+<a href=exception>Exception</a>
+<a href=if>If</a>
+<a href=interface>Interface</a>
+<a href=keyword>Keyword</a>
+<a href=linq>LINQ</a>
+<a href=loop>Loop</a>
+<a href=method>Method</a>
+<a href=number>Number</a>
+<a href=regex>Regex</a>
+<a href=sort>Sort</a>
+<a href=stringbuilder>StringBuilder</a>
+<a href=struct>Struct</a>
+<a href=switch>Switch</a>
+<a href=time>Time</a>
+<a href=valuetype>Value</a>
+<a href=windows>Windows</a></p><img
+src=perls.png
+width=521 height=587
+alt="Dot Net Perls" id=n><h2>1</h2><img
+src=one.png
+width=124 height=124
+alt="One: 1"><p>A square is green.
+All shapes and colors are abstractions.
+All computer programs are built with abstractions.
+Methods and variables exist in material form no more than square or green.
+Programs are beautiful but their construction is not.</p>
+<a href=vb>VB.NET</a><img
+src=collections-2.png
+width=194 height=324
+alt=Collections id=n><h2>2</h2><p>Why is the square green?
+Inspiration made it.
+Years ago I taught myself programming on the Internet.
+There were lots of resources.
+Most were hard to read.
+I thought, What if a programming website was as simple as a children's book?</p>
+
+<a href=http://feeds.feedburner.com/dnp1>Updates</a><h2>3</h2><img
+src=three.png
+width=124 height=124
+alt=Three><p>What if it were so simple, even a child could understand?
+Knowledge dies when it is not available.
+In its simplest form it is most available.
+This is a conceptual website.
+We are conceptual beings.</p>
+<a href=about>About</a>
+<a href=books>Works Cited</a><p id=y><b id=e>Note:</b>
+Written by Sam Allen.<br>sam@dotnetperls.com<br>&copy; 2007-2013 Sam Allen. All
+rights reserved.<form
+action=http://www.google.com/search><input type=hidden name=sitesearch
+value=dotnetperls.com><input name=q><input type=submit value=Go></form></body></
+html>

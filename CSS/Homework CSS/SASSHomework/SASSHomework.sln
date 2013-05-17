@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleLogo", "SampleLogo", "{E3FDBBF5-83D4-44B2-B18F-63DC168AC2B8}"
+	ProjectSection(SolutionItems) = preProject
+		SASS.scss = SASS.scss
+		StylePage.html = StylePage.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebGallery", "WebGallery", "{F8B1C913-9164-44EC-865B-C5E15A0D5F26}"
+	ProjectSection(SolutionItems) = preProject
+		GalleryPage.html = GalleryPage.html
+		GalleryStyles.scss = GalleryStyles.scss
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

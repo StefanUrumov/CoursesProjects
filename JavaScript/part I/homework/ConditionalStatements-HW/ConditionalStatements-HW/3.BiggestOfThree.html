@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Find biggest of three</title>
+     <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="num">Enter number:</label>
+            <input type="text" id="num" />
+
+            <label for="num2">Enter second number:</label>
+            <input type="text" id="num2" />
+
+            <label for="num3">Enter third number:</label>
+            <input type="text" id="num3" />
+        </div>
+        <div id="input-button">
+            <a href="#" onclick="findBiggest()">Find biggest</a>
+        </div>
+    </div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findBiggest() {
+            var input = jsConsole.readFloat('#num');
+            var input2 = jsConsole.readFloat('#num2');
+            var input3 = jsConsole.readFloat('#num3');
+            var biggest = 0;
+
+            if (input > input2) {
+                if (input > input3) {
+                    biggest = input;
+                }
+                else {
+                    biggest = input3;
+                }
+            }
+            else {
+                if (input2 > input3) {
+                    biggest = input2;
+                }
+                else {
+                    biggest = input3;
+                }
+            }
+            jsConsole.writeLine("The biggest number is: " + biggest);
+        }
+    </script>
+
+</body>
+</html>

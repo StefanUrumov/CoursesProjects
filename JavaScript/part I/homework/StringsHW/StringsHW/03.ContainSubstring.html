@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Contain Substring</title> 
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+	<div id="console">
+	</div>
+	
+    <script src="scripts/js-console.js">	  
+	</script>
+    		  
+	<script>
+
+	    var text = "We are living in an yellow submarine. We don't have anything else. Inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.";
+	    var wordToSearch = "in";
+	    
+	    CountOccurenceWord(text, wordToSearch);
+	    
+	    function CountOccurenceWord(text, wordToSearch) {
+	            var countSearchedWord = 0;
+	            var textLower = text.toLowerCase();
+	            var indexOfSub = text.indexOf(wordToSearch);
+	            
+	            while (indexOfSub > -1) {
+	                countSearchedWord++;
+	                indexOfSub = textLower.indexOf(wordToSearch, indexOfSub + 1);
+	            }
+                jsConsole.writeLine("The count of word '" + wordToSearch + "' (case-insensitive search)  is: " + countSearchedWord)
+	    }
+
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+﻿#content thead { font-family:'Times New Roman';
+        font-size:xx-large;
+        text-align:center;
+        font-style:italic;
+}
+    
+#content tbody {font-family:'Times New Roman';
+        font-size:x-large;
+        float:left;
+}
+
+body {
+}

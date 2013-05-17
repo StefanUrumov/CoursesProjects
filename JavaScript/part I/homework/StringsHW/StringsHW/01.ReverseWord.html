@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Reverse word</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="inputdiv">
+		<div class="input">
+			<label for="word">Enter a word: </label>
+			<input type="text" id="word"/>
+		</div>	
+
+		<div id="inputbutton">
+			<input type="button" onclick="onWordClick()" value="Reverse word"/>            
+		</div>
+	</div>
+
+	<div id="console">
+	</div>
+	
+    <script src="scripts/js-console.js">	  
+	</script>
+    		  
+	<script>
+
+	    function onWordClick() {
+	        var input = jsConsole.read('#word');
+
+	        var arr = new Array();
+            
+	        for (var i = 0; i < input.length; i++) {
+	            arr.push(input[i]);
+	        }
+            
+	        arr.reverse();
+
+	        for (var i  in arr ) {
+	            jsConsole.write(arr[i]);
+	        }
+
+	        jsConsole.writeLine();
+	    }
+	</script>
+
+</body>
+</html>

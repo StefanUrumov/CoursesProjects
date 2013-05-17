@@ -1,0 +1,70 @@
+﻿body
+{
+}
+
+#content {
+    width:1000px;
+    height:400px;
+    border: 2px solid orange;
+    border-radius: 20px;
+    background-color:#6c6464;
+    margin: 0;
+    padding: 0;
+}
+
+#login {
+    background-color:#3d3838;
+    height:100px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+    
+}
+    #login h1 {
+        color: white;
+        font-size: 50px;
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align:top;
+        margin-top:20px;      
+    }
+
+    #login img {     
+        margin-left:10px;
+        margin-top:10px;
+    }
+
+.InputField {
+    width:150px;
+    height: 25px; 
+    vertical-align:top;
+    margin-top:40px;
+    }
+
+#Go {
+
+    box-shadow:none;
+    border-color:#3d3838;
+    border-right:none;
+    border-bottom-color:grey;
+    vertical-align:top;
+    margin-top:20px;
+    margin-left:20px;
+    width:105px;
+    height: 60px;
+    background-image:url('http://prikachi.com/images/481/5770481H.jpg');
+}
+
+#about {
+    font-size: 24px;
+    color: darkgrey;
+    margin-left: 5px;
+}
+
+    #about h1 {  
+        font-weight:lighter;         
+    color:yellow;}
+
+#white {
+color:white;
+}

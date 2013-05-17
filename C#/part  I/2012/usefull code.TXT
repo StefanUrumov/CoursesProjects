@@ -1,0 +1,54 @@
+Console.BufferHeight = Int16.MaxValue - 1; //give srcoll to the comsole
+
+// avoids problems with floating point
+using System.Threading;
+using System.Globalization;
+Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+
+
+//read a char input
+ Console.WriteLine("Enter number :");
+ char a = Convert.ToChar(Console.ReadKey().KeyChar);
+  Console.WriteLine();
+
+//read two digits via one string input
+string userInput = Console.ReadLine();
+var something= userInput.Split(new char [] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+int one = int.Parse(something[0]);
+int two = int.Parse(something[1]);
+
+//read two integers via one string input
+string s = "there is a cat";
+	
+	// Split string on spaces.
+	// ... This will separate all the words.
+	
+string[] words = s.Split(' ');
+foreach (string word in words)
+{
+    Console.WriteLine(word);
+}
+
+
+//TryParse check for integers
+bool isNum = false;
+int sizeNum;
+//prompt the user to enter the size of their array
+Console.WriteLine("Enter the array size.");
+ //read in the value
+string sizeString = Console.ReadLine();
+//use TryParse to check for a numeric value
+ isNum = Int32.TryParse(sizeString, out sizeNum);
+
+
+//betwenn two floating types cant be just cast!!!!can not do math directly!
+double a = 0.3F; //cast to float with "F"
+decimal b = 0.2;
+Console.Write(a+b); OUTPUT - application error
+//when Console.Write\Line all in the brackets is done .ToString automaticly:
+long a = 1L;
+string b = "1";
+Console.Write(a+b); OUTPUT = 11!!!!!
+
+//application error = syntax error
+//run-time error = after the code is build, during the execution etc. overflow exeption

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>return index</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="js-console"></div>
+    
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        countNumber();
+
+        function countNumber() {
+
+            var arr = new Array(1, 4, 6, 7, 8, 4, 3, 1, 1, 1, 1, 1, 2, 3, 4, 4, 5, 5, 6, 6);
+
+            var index = -1;
+
+            for (var i = 1; i < arr.length - 1; i++) {
+
+                if ( (arr[i] > arr[i - 1]) && arr[i] > arr[i + 1]) {
+                    index = i;
+            }
+            }
+
+        jsConsole.writeLine('The first index of the number bigger than it \'s two neighbors is: ' + index);
+        }
+    </script>
+
+
+</body>
+</html>

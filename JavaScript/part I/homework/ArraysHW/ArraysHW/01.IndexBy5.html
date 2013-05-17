@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Array index multupy by 5</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <!--<div class="input">
+            <label for="num">Enter number:</label>
+            <input type="text" id="num" />
+        </div>-->
+
+        <div id="input-button">
+            <input type="button" onclick="findIndexBy5()" value="Show new array"/>
+        </div>
+    </div>
+
+    <div id="console"></div>
+    <script src="scripts/js-console.js"></script>
+    
+    <script>
+        function findIndexBy5() {
+            //var value = jsConsole.readFloat('#num');
+
+            var numArr = new Array(20);
+
+            var i;
+            for (i = 0; i < numArr.length; i++) {
+                jsConsole.writeLine(i + " " + (i * 5));
+            }
+            }
+    </script>
+
+</body>
+</html>

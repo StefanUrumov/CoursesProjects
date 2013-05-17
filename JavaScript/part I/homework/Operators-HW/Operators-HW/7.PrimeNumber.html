@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Check if number is prime</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+
+     <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+
+    <div id="input-div">
+        <div class="input">
+            <label for="num">Enter a number:</label>
+            <input type="text" id="num" />             
+           
+        </div>
+        <div id="input-button">
+            <a href="#" onclick="findPrime()">Find prime</a>
+        </div>
+    </div>
+
+    <div id="console"></div>
+
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function findPrime() {
+            var number = jsConsole.readInteger('#num');
+            var isPrime = true;
+
+            if (number < 2) {
+                jsConsole.writeLine("Numbers smaller than 2 is not prime numbers.");
+                isPrime = false;
+            }
+            else {
+                for (var i = 2; i < number; i++) {
+                    if (number % i == 0) {
+                        isPrime = false;
+                    }
+                }
+            }
+
+            if (isPrime == true) {                
+                    jsConsole.writeLine("Number " + number + " is prime number.");
+                }
+            else {
+                    jsConsole.writeLine("Number " + number + " is NOT prime number.", number);
+            }
+        }
+    </script>
+
+</body>
+</html>
