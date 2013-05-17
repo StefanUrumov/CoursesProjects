@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace PublicHostingSite
 {
+    using System;
+    using System.Linq;
+
     class FindMe
     {
         static void Main()
         {
-
-
+            //this homework can be found on GitHub public hosting site
+            https://github.com/ekostadinov/CoursesProjects/tree/master/QA/Homework/14.DevelopmentTools
         }
     }
 }
