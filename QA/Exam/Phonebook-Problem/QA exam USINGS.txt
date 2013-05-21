@@ -1,0 +1,26 @@
+Use evaluation criteria in .doc file from last homework 
+to see and get ideas what to improve in your code
+
+
+
+
+1. Refactoring - first small canges, just method and variables names. 
+
+
+
+
+
+
+
+2. Bug fixing - F5 debug and find problems / compare example
+ input with output
+
+3. Unit testing - F12 helps find selected items (like paramers
+ needed to create new item) it the solution. Use 2 variables (expected
+ and actual) when Assert. Can use System.Linq when need .count or else.
+Can use Assert.AreEqual or Assert.AreSame(when must compare 2 objects). 
+CollectionAssert.AreEqual when testing collections
+
+4. Refactoring - extract methods from complex and big classes and etc.
+
+5. Documentation - over the method/class /// 
