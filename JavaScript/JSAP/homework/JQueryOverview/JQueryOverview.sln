@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JQueryOverview", "JQueryOverview\JQueryOverview.csproj", "{9A3D6BC5-1762-4718-83E2-86358A077DDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A3D6BC5-1762-4718-83E2-86358A077DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A3D6BC5-1762-4718-83E2-86358A077DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A3D6BC5-1762-4718-83E2-86358A077DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A3D6BC5-1762-4718-83E2-86358A077DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
