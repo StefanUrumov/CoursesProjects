@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingSearchingAlgorithms", "SortingSearchingAlgorithms\SortingSearchingAlgorithms.csproj", "{9A4C2C68-3801-439F-80E6-45BB4A246698}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A4C2C68-3801-439F-80E6-45BB4A246698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A4C2C68-3801-439F-80E6-45BB4A246698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A4C2C68-3801-439F-80E6-45BB4A246698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A4C2C68-3801-439F-80E6-45BB4A246698}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
