@@ -1,0 +1,61 @@
+﻿html, body, div button, canvas, h1, h2, h3, p{
+	margin:0;
+	padding:0;
+}
+a {text-decoration:none;}
+ul {list-style:none;}
+img{border:none;}
+#wrapper {
+	width:960px;
+	height:100%;
+	//margin:0, auto;
+	margin-left: 30%;
+}
+#content {
+	width:960;
+	
+	padding-top: 20px;
+}
+
+.clear {
+	content:"";
+	clear:both;
+	display:block;
+	_zoom:1;
+}
+.left {float:left}
+.right{float:right}
+
+ul{  
+    margin:0;  
+    padding:0;  
+}  
+  
+li{  
+    width:100px;  
+    height:50px;  
+    float:left;  
+    color:#191919;  
+    text-align:center;  
+    overflow:hidden;  
+}  
+  
+a{  
+    color:#FFF;  
+    text-decoration:none;  
+}  
+  
+p{  
+    padding:0px 5px;  
+}  
+  
+    .subtext{  
+        padding-top:15px;  
+    }  
+  
+/*Menu Color Classes*/  
+.green{background:#6AA63B;}  
+.yellow{background:#FBC700;}  
+.red{background:#D52100;}  
+.purple{background:#5122B4;}  
+.blue{background:#0292C0;}  

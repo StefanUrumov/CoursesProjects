@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple snake game" />
+        <meta name="author" content="Team Pear" />
+    <title>Snake game</title>
+      <link type="text/css" rel="stylesheet" href="css/main.css"  />
+     <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+</head>
+<body>
+   <div id="tabs">
+      <ul>
+        <li><a href="#tabs-1">GAME</a></li>
+        <li><a href="#tabs-2">AboutUS</a></li>
+        <li><a href="#tabs-3">High-scores</a></li>
+        <li><a href="#tabs-4">Socialize ME</a></li>
+      </ul>
+      <div id="tabs-1">
+         <canvas width="600" height="350" class="left"></canvas>
+          <div>
+            <p>Press Enter for start game</p>
+            <p>Press R for restart game</p>
+            <p>Use Space for speed up</p>
+            <p>Control the snake with W,A,S,D or arrows</p>
+        </div>
+      </div>
+      <div id="tabs-2">
+        <p>About us:</p>
+        <p>Evgeni Kostadinov </p>
+        <p>Vasil Gudzhev </p>
+      </div>
+      <div id="tabs-3">
+        <p>High-scores</p>
+        <div id="rank-list"></div>
+      </div>
+      <div id="tabs-4">
+        <p>Get social</p>
+      </div>
+    </div>
+           
+  <script src="scripts/jquery-ui/js/jquery-1.9.1.js"></script>
+  <script src="scripts/jquery-ui/js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="scripts/script.js"></script>
+  <script src="scripts/storage.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple snake game" />
+        <meta name="author" content="Team Pear" />
+    <title>Snake game</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css"  />
+</head>
+<body>
+    <div id = "wrapper">
+        <header id="header">
+            <nav id="nav">
+                <ul>  
+					<li class="green">  
+						<p><a href="#">Home</a></p>  
+					</li>  
+					<li class="yellow">  
+						<p><a href="#" onclick="showUs()">About us</a></p>  
+					</li>  
+					<li class="red">  
+						<p><a href="#" onclick="showGameButtons()">Play game</a></p>   
+					</li>  
+					<li class="blue">  
+						<p><a href="#">Submit your high score</a></p>  
+					</li>   
+				</ul>  
+            </nav>
+        </header>
+        <div id ="content">
+            <div id="rank-list">Top Five</div>            
+            <div id="score">Score: </div>            
+        </div>
+        <footer id="footer">
+
+        </footer>
+    </div>
+	<script src="scripts/jquery-2.0.2.js"></script>
+	<script src="scripts/script.js"></script>
+    <script src="scripts/storage.js"></script>
+</body>
+</html>
