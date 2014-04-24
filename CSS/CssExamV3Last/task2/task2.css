@@ -1,0 +1,51 @@
+﻿/*styles*/
+
+ul {
+    width: 70px;
+    list-style: none;
+    
+}
+
+ul li {
+    margin-left: -30px;
+    border-bottom: 1px solid black;
+}
+
+
+    ul li:last-of-type {
+        border-bottom: none;
+    }
+
+    ul li:first-letter {
+        text-decoration: underline;    
+    }
+
+    li.selected {
+        background: rgb(100, 80, 255);
+    }
+
+/*position*/
+ul {
+    position: relative;
+    height: 140px;
+    overflow-y:scroll;
+    background: linear-gradient(rgb(110, 80, 255), rgb(240, 255, 255));
+    border-top-left-radius: 5px;
+}
+
+div a {
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -100px;
+}
+
+div a:last-of-type {
+    position: absolute;
+    margin-left: 150px;
+}
+
+ul:last-of-type {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: -160px;
+}

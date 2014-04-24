@@ -1,0 +1,71 @@
+
+    /*styles*/
+    div#wrapper {
+        position: relative;
+    }
+
+    div#wrapper div {
+        border: 1px solid grey;
+        width: 150px;
+        /*position: absolute;*/
+    }
+    
+    hgroup, p, a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    div#wrapper div div{
+        border: none;
+    }
+
+    div a {
+        color: red;
+        text-decoration: none;
+    }
+
+        div a span{
+            text-transform: uppercase;
+        }
+
+    /*div1*/
+        div#wrapper div:first-child {
+        }
+
+    /*div2*/
+    div#wrapper div:nth-child(2) {
+        margin-left: 151px;
+        margin-top: -270px;
+        }
+   
+     /*div3*/
+    #wrapper > div:nth-child(3) {
+        margin-left: 301px;
+        margin-top: -305px;
+        margin-bottom: 5px;
+    }
+
+
+    /*div4*/
+    div#wrapper div:nth-child(4) {
+        margin-left: 451px;
+        margin-top: -285px;
+        }
+
+    /*div5*/
+    #wrapper > div:nth-child(5) {
+        margin-left: 601px;
+        margin-top: -245px;
+    }
+
+    /*div6*/
+    #wrapper > div:nth-child(6) {
+        margin-left: 751px;
+        margin-top: -230px;
+    }
+
+
+    /*postions*/
+
+
+

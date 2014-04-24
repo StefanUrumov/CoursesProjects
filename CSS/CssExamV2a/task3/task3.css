@@ -1,0 +1,50 @@
+/*styles*/
+form {
+    border: 1px solid black;
+    width: 310px;
+    text-align: right;
+    padding: 5px;
+    background: linear-gradient(rgb(105, 210, 255), rgb(140, 255, 251));
+    border-radius: 10px;
+}
+
+fieldset {
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+
+    fieldset input {
+        border: 1px solid #008FFF;
+        border-radius: 5px;
+        background: linear-gradient(rgb(115, 210, 255), rgb(140, 255, 255));
+    }
+
+button {
+    background: linear-gradient(rgb(70, 200, 255), rgb(130, 250, 250));
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+}
+
+input:last-of-type {
+    background: linear-gradient(rgb(70, 200, 255), rgb(130, 250, 250));
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+    
+}
+
+/*positions*/
+
+
+
+
+
+
+
+
+
+
+
+

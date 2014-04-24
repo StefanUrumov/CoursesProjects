@@ -1,0 +1,111 @@
+/*styles*/
+ul.tab-strip {
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+    ul.tab-strip li{
+        border: 1px solid black;
+        background: rgb(205, 205, 205);
+        padding: 4px;
+    }
+
+        ul.tab-strip li:hover {
+            background: rgb(240, 240, 240);
+        }
+
+        ul.tab-strip li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            width: 50px;
+        }
+
+div.tab-content ul li{
+    background: none;
+    padding: 0;
+}
+
+    div.tab-content ul li {
+        border: none;
+        list-style: disc;
+        background: none;
+    }
+
+        div.tab-content ul ul li {
+            list-style:lower-alpha;
+            background: none;
+
+        }
+    
+    ul.tab-strip li.current {
+    border-bottom: none;
+    background: none;
+}
+
+div.tab-content table {
+    border-collapse:collapse;
+    margin-top: 10px;
+}
+
+    div.tab-content th, td {
+        border: 1px solid black;
+    }
+
+    div.tab-content th {
+        background: linear-gradient(rgb(180, 180, 180), rgb(240, 240, 240));
+    }
+    
+    div.tab-content td {
+        background: rgb(240, 240, 240);
+    }
+
+
+/*positions*/
+ul.tab-strip {
+    padding: 0;
+}
+
+ul.tab-strip li{
+    display: inline;
+}
+
+    ul.tab-strip li a{
+        position: relative;
+    }
+
+    li.current div.tab-content  {
+        display: block;
+    }
+
+
+div.tab-content{
+    display: none;
+    position: absolute;
+}
+
+    div.tab-content ul {
+        margin-top: 10px;
+        margin-left: 10px;
+        background: none;
+    }
+
+        div.tab-content ul li {
+            display: block;
+            margin-left: -20px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+

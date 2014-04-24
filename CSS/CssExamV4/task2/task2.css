@@ -1,0 +1,62 @@
+﻿/*styles*/
+div {
+    background: rgb(204,204,204);
+    border-radius: 10px;
+}
+
+div a {
+    color: black;
+}
+
+div span {
+    border-bottom: 1px solid black;
+}
+
+    div img {
+        border-radius: 10px;
+    }
+
+    div.holder img {
+        border-radius: 10px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+div.playlist {
+    background: none;
+}
+
+/*position*/
+div.holder {
+    position: relative;
+}
+
+    div.holder img {
+        padding: 10px;
+    }
+
+div.playlist {
+    position: absolute;
+    margin-top: -390px;
+    margin-left: 480px;  
+}
+
+    div.playlist ul{
+        padding-left: 5px;
+        margin-top: 5px;
+    }
+
+li img {
+    height: 70px;
+    position: relative;
+    padding-top: 20px;
+}
+
+li span {
+    position: absolute;
+    margin-top: -10px;
+}
+
+

@@ -1,0 +1,87 @@
+/*body, div {
+    margin: 0;
+    padding: 0;
+}*/
+
+/*positions*/
+
+
+/*styles*/
+ul.tab-strip {
+    list-style: none;
+
+}
+
+ul.tab-strip li {
+    display: inline-block;
+}     
+
+ ul li a {
+     position: relative;
+     text-decoration: none;
+     color: black;
+     border: 1px solid black;
+     margin-left: -5px;
+     padding: 5px;
+     font-size: 1.4em;
+     background: linear-gradient(rgb(230, 230, 230), rgb(170, 170, 170));
+ }      
+
+ div.tab-content {
+     display: none;
+     position: absolute;
+     margin-left: -5px;
+     border: 1px solid black;
+     border-top: none;
+     width: 240px;
+     height: 200px;
+     padding-top: 10px;
+    }
+
+li.current a{
+    border-bottom: none;
+    background: none;  
+}
+
+li a:hover {
+    background: rgb(240, 240, 240);
+}
+
+li.current div.tab-content {
+    display: block;
+}
+
+  div.tab-content ul li{
+        display: block;
+        border: none;
+        list-style: disc;
+        background: none;
+    }
+
+        div.tab-content ul ul li {
+            list-style:lower-alpha;
+            background: none;
+        }
+
+div.tab-content table {
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-top: 20px;
+        }
+
+div.tab-content th, td {
+    border: 1px solid black;
+}
+
+div.tab-content th {
+    background: linear-gradient(rgb(185, 185, 185), rgb(240, 240, 240));
+}
+
+div.tab-content td {
+    background: rgb(240, 240, 240);
+
+}
+
+
+
+

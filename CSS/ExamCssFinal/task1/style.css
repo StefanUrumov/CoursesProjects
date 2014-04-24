@@ -1,0 +1,93 @@
+html, body {
+	font-family: Tahoma, sans-serif;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*styles*/
+div#wrapper {
+    font-size: 14px;
+}
+
+    div#archive ul {
+            margin-top: -5px;
+    }
+
+    div#archive ul li {
+        list-style: none;
+        display: inline;
+        font-size: 10px;
+        padding-left: 8px;
+    }
+
+        div#archive ul li:first-of-type {
+            margin-left: 710px;
+        }
+
+        div#archive ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+div#header {
+    background-image: url('/images/topnav_divider.png');
+    background-repeat: repeat;
+    color: white;
+    height: 60px;
+    margin-top: -10px;
+}
+
+nav#nav ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+    nav#nav ul li:first-of-type {
+        margin-left: 5px;
+    }
+
+    nav#nav ul li a {
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+    }
+
+        nav#nav:first-letter {
+            text-transform: uppercase;
+        }
+
+        nav#nav{
+            position: relative;
+        }
+       
+        div#header h1 {
+            position: absolute;
+            margin-left: 635px;
+            margin-top: -35px;
+            font-size: 28px;
+        }
+
+div#content {
+     color: rgb(51, 51, 51);
+}
+
+    div#content h1 {
+        font-size: 24px;
+        color: rgb(51, 51, 51);
+    }
+
+/*positions*/
+
+
+
+

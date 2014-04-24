@@ -1,0 +1,110 @@
+﻿/*styles*/  
+ul {
+    list-style: none;
+}
+
+    ul.notification-list li {
+        border: 1px solid black;
+        border-left: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 5px;
+        background: linear-gradient(rgb(180, 180, 180), rgb(220, 220, 220));
+    }
+
+        ul.notification-list li:hover {
+            border-bottom: none;
+        }
+        
+        ul.notification-list li:first-of-type {
+            border-left: 1px solid black;
+            border-top-left-radius:10px
+        }
+
+        ul.notification-list li:last-of-type {
+            border-top-right-radius:10px
+        }
+
+    ul li a {
+        text-decoration: none;
+        color: grey;
+    }
+
+ul ul {
+    border: none;
+}
+
+div.content {
+    background: rgb(220, 220, 220);
+}
+
+    div.content ul li {
+        border: none;
+        background: none;
+    }
+
+
+        div.content ul li:hover a span {
+            border-bottom: 1px solid black;
+        }
+        
+
+        div.content ul li:first-of-type {
+            border: none;
+        }
+
+
+ul ul li a{
+    border: none;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+div.content {
+    border: 1px solid black;
+    border-top: none;
+    width: 270px;    
+}
+
+
+
+/*positions*/
+
+ul.notification-list li {
+    display: inline;
+}
+
+    ul.notification-list li a{
+        position: relative;
+    }
+
+ div.content {
+    display: none;
+    margin-left: -30px;
+}
+
+    ul.notification-list li:hover div.content {
+        display: block;
+        position: absolute;
+    }
+
+
+    ul li:first-of-type {
+        margin-left: -30px;
+    }
+
+    ul ul li:first-of-type {
+        margin-left: 0px;
+    }
+
+
+ div.content ul li{
+     display: block;
+     margin-left: -30px;
+ }
+
+
+

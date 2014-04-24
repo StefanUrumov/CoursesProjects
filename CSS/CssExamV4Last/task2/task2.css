@@ -1,0 +1,81 @@
+﻿/*styles*/
+div#wrapper div {
+    background: grey;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    width: 600px;
+}
+
+
+ul li {
+    list-style: none;
+    position: absolute;
+    margin-left: 440px;
+    margin-top: -370px;
+}
+
+    ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+        ul li a img {
+            position: relative;
+            width: 80px;
+        }
+
+        ul li a span {
+            position: absolute;
+            margin-top: 59px;
+            margin-left: -92px;
+    border-bottom: 1px solid black;
+
+        }
+
+    ul li:nth-child(2) {
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        margin-left: 440px;
+        margin-top: -275px;
+    }
+
+    ul li:nth-child(3) {
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        margin-left: 440px;
+        margin-top: -180px;
+    }
+
+    ul li:nth-child(4) {
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        margin-left: 440px;
+        margin-top: -90px;
+    }
+
+
+
+
+
+
+
+
+/*positions*/
+
+
+
+
+
+
+
+
+
+
+
+
+

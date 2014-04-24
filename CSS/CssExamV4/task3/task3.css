@@ -1,0 +1,175 @@
+/*styles*/
+div#wrapper div {
+    border: 2px solid #D2D7DC;
+    width: 150px;
+}
+
+div#wrapper div div {
+    border: none;
+}
+
+div a {
+    text-decoration: none;
+    color: red;
+}
+
+a span {
+    text-transform:uppercase;
+}
+
+
+
+
+
+
+
+
+/*position*/
+div#wrapper {
+    position: relative;
+}
+
+div#wrapper div {
+    position: absolute;
+    display: inline;
+}
+
+
+    div#wrapper div div{
+        position: relative;
+        display: block;
+    }
+
+
+div#wrapper div:nth-child(1) {
+    margin-left: 150px;
+    border-right: none;
+}
+
+    div#wrapper div:nth-child(1) div {
+        margin-left: 0px;
+    }
+
+    div#wrapper div:nth-child(1) hgroup:before {
+        content: url('/imgs/install.png');
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    div#wrapper div:nth-child(1) hgroup {
+        margin-left: 50px; 
+    }
+
+    div#wrapper div:nth-child(1) hgroup h2{
+        margin-top: -20px; 
+    }
+
+div#wrapper div:nth-child(2) {
+    margin-left: 301px;
+    border-right: none;
+}
+
+    div#wrapper div:nth-child(2) div {
+        margin-left: 0px;
+    }
+    
+    div#wrapper div:nth-child(2) hgroup:before {
+        content: url('/imgs/tuneUp.png');
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    div#wrapper div:nth-child(2) hgroup {
+        margin-left: 50px; 
+    }
+
+    div#wrapper div:nth-child(2) hgroup h2{
+        margin-top: -20px; 
+    }
+    
+div#wrapper div:nth-child(3) {
+    margin-left: 451px;
+    border-right: none;
+}
+
+    div#wrapper div:nth-child(3) div {
+        margin-left: 0px;
+    }
+    
+    div#wrapper div:nth-child(3) hgroup:before {
+        content: url('/imgs/manage.png');
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    div#wrapper div:nth-child(3) hgroup {
+        margin-left: 50px; 
+    }
+
+    div#wrapper div:nth-child(3) hgroup h2{
+        margin-top: -20px;
+        font-size: 15px;
+    }
+    
+div#wrapper div:nth-child(4) {
+    margin-left: 601px;
+    border-right: none;
+}
+
+    div#wrapper div:nth-child(4) div {
+        margin-left: 0px;
+    }
+    
+    div#wrapper div:nth-child(4) hgroup:before {
+        content: url('/imgs/openSource.png');
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    div#wrapper div:nth-child(4) hgroup {
+        margin-left: 50px;
+        font-size: 10px;
+    }
+
+div#wrapper div:nth-child(5) {
+    margin-left: 751px;
+    border-right: none;
+}
+
+    div#wrapper div:nth-child(5) div {
+        margin-left: 0px;
+    }
+    
+    div#wrapper div:nth-child(5) hgroup:before {
+        content: url('/imgs/twitter.png');
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    div#wrapper div:nth-child(5) hgroup {
+        margin-left: 50px;
+        font-size: 10px;
+    }
+
+    div.yellowBox {
+        border: 1px solid yellow;
+    }
+
+div#wrapper div:nth-child(6) {
+    margin-left: 901px;
+}
+
+    div#wrapper div:nth-child(6) div {
+        margin-left: 0px;
+    }
+    
+    div#wrapper div:nth-child(6) hgroup:before {
+        content: url('/imgs/about.png');
+        position: absolute;
+        margin-left: -40px;
+    }
+
+    div#wrapper div:nth-child(6) hgroup {
+        margin-left: 50px;
+        font-size: 10px;
+    }

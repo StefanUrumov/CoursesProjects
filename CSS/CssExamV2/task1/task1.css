@@ -1,0 +1,98 @@
+﻿/*styles*/
+div#wrapper ul li{
+    list-style: none;
+    border: 1px solid black;
+    background: linear-gradient(rgb(238, 238, 238), rgb(170, 170, 170));
+}
+
+    div#wrapper ul li a {
+        color: grey;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+
+div.accordion-content {
+    color: grey;
+    text-align: center;
+    background: rgb(170, 170, 170);
+}
+
+    div.accordion-content p {
+    text-align:right;
+    text-align:justify;
+        padding-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 0;
+        margin-top: -20px;
+    }
+
+    div.accordion-content h1 {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+
+    div.accordion-content table {
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-left: 25px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        
+    }
+
+    div.accordion-content th, td {
+        border: 1px solid black;
+    }
+
+    div.accordion-content th {
+        background: linear-gradient(rgb(230, 230, 230), rgb(147, 147, 147));
+    }
+
+    div.accordion-content td {
+        color: white;
+        background: linear-gradient(rgb(197, 197, 197), rgb(141, 141, 141));
+        padding: 2px;
+    }
+
+/*position*/
+div#wrapper ul li {
+    width: 300px;
+    position: relative;
+}
+
+    div#wrapper ul li:hover div.accordion-content {
+        display: block;
+    }
+
+    div#wrapper ul li a {
+        padding-left: 100px;
+    }
+
+div.accordion-content {
+    /*float: left;*/
+    margin-top: -5px;
+    display: none;
+}
+
+    /*div.accordion-content h1, p,table {
+        float: none;    
+    }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

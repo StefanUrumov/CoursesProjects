@@ -1,0 +1,91 @@
+body {
+  font-size: 14px;
+  font-family: 'Times New Roman';
+}
+#root {
+  width: 700px;
+}
+
+/*styles*/
+div#large {
+    border: 1px solid grey;
+    height: 400px;
+    width: 490px;
+}
+
+    div#large h1 {
+        font-size: 20px;
+        margin-left: 90px;
+    }
+
+    div#large img {
+        height: 300px;
+        width: 450px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+div#list {
+    position: absolute;
+    margin-left:490px;
+    margin-top: -400px;
+    border: 1px solid grey;
+    text-align: center;
+    width: 200px;
+    height: 400px;
+    overflow: scroll;
+}
+
+
+button#btn-prev {
+    position: absolute;
+    margin-left: -140px;
+    margin-top: 30px;
+    width: 95px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 5px;
+            background: rgb(204, 204, 204);
+
+}
+
+button#btn-prev :hover {
+    background: rgb(230, 230, 230);
+}
+
+button#btn-next {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 30px;
+    width: 95px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 5px;
+            background: rgb(204, 204, 204);
+
+}
+
+button#btn-next:hover {
+    background: rgb(230, 230, 230);
+}
+
+div#list ul {
+    margin-top: 80px;
+    list-style: none;
+          }
+
+    div#list ul li {
+        border-bottom: 2px solid grey;
+        width: 170px;
+        margin-left: -30px;
+    }
+
+        div#list ul li:first-of-type {
+            background: rgb(204, 204, 204);
+            border-radius: 5px;
+        }
+
+/*positions*/
+
+
+

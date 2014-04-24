@@ -1,0 +1,99 @@
+﻿/*styles*/
+form {
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px;
+    text-align: right;
+    background: linear-gradient(rgb(230, 250, 90), rgb(70, 70, 70));
+    color: white;
+}
+
+fieldset {
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+legend {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+input {
+    border: 2px solid grey;
+    background: linear-gradient(rgb(230, 250, 90), rgb(70, 70, 70));
+    border-radius: 5px;
+}
+
+    input#tb-age {
+        color: white;
+        padding-left: 5px;
+        width: 30px;
+        height: 20px;
+    }
+
+    input[type=radio] {
+        display: none;
+    }
+
+    input:last-of-type {
+        background: linear-gradient(rgb(210, 230, 45), rgb(90, 95, 65));
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+    height: 25px;
+    }
+
+        input:last-of-type:hover {
+            background: rgb(240, 255, 145);
+        }
+
+button {
+    background: linear-gradient(rgb(210, 230, 45), rgb(90, 95, 65));
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+    height: 25px;
+}
+
+    button:hover {
+        background: rgb(240, 255, 145);
+    }
+
+label[for*=tb-rpt-password] {
+        margin-left: -30px;
+    }
+
+
+label[for*=radio-no] {
+    font-weight: bold;
+    }
+
+label[for*=radio-yes]:hover {
+    font-weight: bold;
+    }
+
+    label[for*=radio-yes]:hover label:last-of-type{
+        font-weight: normal;
+    }
+
+
+
+
+/*position*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01.TreeView", "01.TreeView", "{92D0BEDF-4F84-4F73-863E-0BACA5689AE3}"
+	ProjectSection(SolutionItems) = preProject
+		TreePage.html = TreePage.html
+		TreeStyles.css = TreeStyles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.MusicCategories", "02.MusicCategories", "{EF3EF826-CEE7-4D4E-9856-15E9F0AA2940}"
+	ProjectSection(SolutionItems) = preProject
+		MusicPage.html = MusicPage.html
+		MusicStyles.css = MusicStyles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.TotalManagement", "03.TotalManagement", "{047B8B5C-71B2-4CBA-AB8E-FB55BF3E55A2}"
+	ProjectSection(SolutionItems) = preProject
+		TotalPage.html = TotalPage.html
+		TotalStyles.css = TotalStyles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.CSSTutorial", "04.CSSTutorial", "{ADB11C91-4E60-4164-B9BC-AE9905A38C0C}"
+	ProjectSection(SolutionItems) = preProject
+		TutorialPage.html = TutorialPage.html
+		TutorialStyles.css = TutorialStyles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.Laptop", "05.Laptop", "{4014ABF1-1DEA-45FD-912F-4C7A98DB2602}"
+	ProjectSection(SolutionItems) = preProject
+		LaptopPage.html = LaptopPage.html
+		LaptopStyles.css = LaptopStyles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05.News", "05.News", "{FECE42B5-BCF1-469C-B864-CAC22E7A9C36}"
+	ProjectSection(SolutionItems) = preProject
+		NewsPage.html = NewsPage.html
+		NewsStyles.css = NewsStyles.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

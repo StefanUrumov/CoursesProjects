@@ -1,0 +1,150 @@
+﻿/*styles*/
+ul {
+    list-style: none;
+}
+
+    ul li {
+        background: linear-gradient(rgb(170, 255, 240), rgb(35, 255, 215));
+    }
+
+        ul li:hover {
+            background: rgb(0, 220, 180);
+            border-top: none;
+        }
+        
+        ul li a {
+            text-decoration: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            border: 1px solid black; 
+            color: #0096FF;
+        }
+
+    ul ul {
+        border: 1px solid black;
+        border-bottom: none;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 305px;
+        background: rgb(170, 255, 240);
+    }
+
+div.msg-bar-content ul li {
+    padding: 1px;
+    border-bottom: 1px solid black;
+    width: 240px;
+    text-align: right;
+    background: none;
+}
+
+    div.msg-bar-content ul li:last-of-type {
+        border-bottom: none;
+    }
+    
+span.user {
+    border: 1px solid black;
+    border-radius: 10px;
+    list-style: inside;
+    padding-left: 2px;
+}
+
+ul ul li.me-item span.user {
+    text-align: left;
+}
+
+    span.user:before {
+        content: url('imgs/me.png')
+    }
+
+        li.other-item span.user:before {
+            content: url('imgs/male.png')
+        }
+
+    
+/*positions*/
+ul.msg-bar {
+        margin-top: 200px ;
+}
+
+    ul.msg-bar li:hover div.msg-bar-content{
+        display: block;
+    }
+
+ul li {
+        display: inline;
+        margin-left: -5px;
+   }
+
+    ul li a {
+        position: relative;
+    }
+
+div.msg-bar-content {
+    display: none;
+    position: absolute;
+    margin-left: -5px;
+    margin-top: -115px;
+}
+
+    div.msg-bar-content ul li {
+        display: block;
+        margin-left: 50px;
+    }
+
+        div.msg-bar-content ul li:last-of-type {
+            margin-bottom: 25px;
+        }
+
+span.user {
+    position: absolute;
+    margin-left: -240px;
+    text-align: left;
+}
+
+
+    div.msg-bar-content ul li:nth-child(1) span.user {
+        margin-left: -190px;
+    }
+
+    div.msg-bar-content ul li:nth-child(2) span.user {
+        margin-left: -275px;
+    }
+
+    div.msg-bar-content ul li:nth-child(3) span.user {
+        margin-left: -165px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

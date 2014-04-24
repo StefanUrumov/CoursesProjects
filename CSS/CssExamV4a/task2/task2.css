@@ -1,0 +1,48 @@
+﻿/*styles*/
+div#wrapper div:first-of-type {
+    background: grey;
+    padding: 5px;
+    border-radius: 5px;
+    width: 600px;
+}
+
+ul li {
+    list-style: none;
+}
+
+div.playlist ul{
+    width: 100px;
+    background: none;
+}
+
+div.playlist li {
+    margin-bottom: 5px;
+}
+
+div.playlist img {
+    width: 80px;
+    border-radius: 5px;
+}
+
+div.playlist span {
+    text-decoration: none;
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+
+/*positions*/
+div.holder {
+    position: relative;
+}
+
+div.playlist {
+    position: absolute;
+    margin-left: 460px;
+    margin-top: -380px;
+}
+
+
+

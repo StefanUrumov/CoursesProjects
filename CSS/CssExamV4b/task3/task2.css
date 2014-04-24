@@ -1,0 +1,78 @@
+﻿/*styles*/
+div#wrapper{
+    background: grey;
+    border-radius: 10px;
+    width: 700px;
+}
+
+
+div.holder {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+    div.holder img {
+        height: 400px;
+        margin-bottom: 5px;
+    }
+
+div.playlist {
+    background: none;
+}
+
+    div.playlist ul {
+        list-style: none;
+    }
+
+    div.playlist ul li { 
+        width: 90px;
+        height: 70px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        text-align: center;
+        background-image: url('imgs/presentation-title.png');
+
+    }
+
+        div.playlist ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+            div.playlist ul li a img {
+                visibility: hidden;
+            }
+
+
+
+
+
+/*positions*/
+div.holder {
+    position: relative;
+}
+
+div.playlist {
+    position: absolute;
+    margin-left: 520px;
+    margin-top: -420px;
+
+}
+
+    div.playlist ul li a img {
+        position: relative;
+    }
+
+    div.playlist ul li a span {
+        position: absolute;
+        width: 110px;
+        margin-left: -50px;
+        border-bottom: 1px solid black;
+        margin-top: -5px;
+    }
+
+
+
+
+

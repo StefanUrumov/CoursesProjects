@@ -1,0 +1,105 @@
+
+/*styles*/
+div#wrapper form {
+    border: 1px solid black;
+    background: linear-gradient(rgb(105, 210, 255), rgb(140, 255, 255));
+    width: 350px;
+}
+
+form fieldset {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 90px;
+    width: 310px;
+}
+
+fieldset legend {
+    margin-left: 180px;
+}
+
+fieldset input {
+    background: linear-gradient(rgb(113, 222, 253), rgb(138, 252, 252));
+    border: 1px solid #009BDD;
+    border-radius: 5px;
+}
+
+input#tb-rpt-password {
+    background: linear-gradient(rgb(113, 222, 253), rgb(138, 252, 252));
+       border: 1px solid #009BDD;
+    border-radius: 5px;
+}
+
+    fieldset:last-of-type input:last-of-type {
+        text-align: right;
+        width: 40px;
+    }
+
+form button {
+    background: linear-gradient(rgb(65, 201, 255), rgb(130, 250, 255));
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+form input:last-of-type {
+    background: linear-gradient(rgb(65, 201, 255), rgb(130, 250, 255));
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+    input[type=reset]:hover {
+        background: rgb(155, 255, 255);
+    }
+
+    form button:hover {
+        background: rgb(155, 255, 255);
+    }
+
+/*position*/
+
+form button {
+    margin-left: 130px;    
+}
+
+fieldset {
+    position: relative;
+}
+
+fieldset label {
+    position: relative;
+    margin-left: 70px;
+}
+
+fieldset label:last-of-type {
+    position: relative;
+    margin-left: 23px;
+}
+
+fieldset:last-of-type label {
+    position: relative;
+    margin-left: 70px;
+}
+
+    fieldset:last-of-type label:last-of-type {
+    position: relative;
+    margin-left: 210px;
+}
+
+fieldset:last-of-type input {
+    position: absolute;
+    margin-left: 0;
+}
+
+    fieldset:last-of-type input:first-of-type {
+        position: relative;
+        margin-left: 5px;
+    }
+
+    fieldset:last-of-type input:last-of-type {
+        position: absolute;
+        margin-left: 5px;
+        margin-top: 7px;
+    }
+
+

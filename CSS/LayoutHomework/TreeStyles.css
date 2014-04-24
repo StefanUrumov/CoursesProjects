@@ -1,0 +1,100 @@
+﻿ul li {
+    list-style: none;
+}
+
+    ul li a {
+        color: black;
+    }
+
+    ul li:hover ul {
+        display: block;
+    }
+
+ul ul {
+    display: none;
+}
+
+ul ul li a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#nav ul {
+    list-style-type:none;
+    font-family: Arial;
+    font-size: 14px;     
+    zoom: 1;  
+    margin: 0;
+    padding: 0; 
+}
+
+
+
+    #nav ul li a {
+        color:black;
+        text-decoration: none;
+    }
+    #nav ul li a:hover {
+        text-decoration:underline;
+    }
+
+    #nav ul li ul {
+    display: none;
+    margin: 5px;
+    
+    }
+
+    #nav ul li:hover ul {
+    display: block;
+    }
+
+    #nav ul li ul li a{
+    color: grey;
+    }
+
+body
+{
+}
+    */

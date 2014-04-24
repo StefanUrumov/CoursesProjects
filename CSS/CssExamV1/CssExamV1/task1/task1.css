@@ -1,0 +1,86 @@
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/*styles*/
+ul a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid purple;
+    font-size: 25px;
+}
+ul li {
+    list-style: none;
+    width:auto;
+}
+
+ul li ul li:first-of-type {
+    list-style-image: url('/imgs/arrow.png');
+    vertical-align: middle;
+    list-style-position:inside;
+    margin-left: -10px;
+}
+
+ul li:last-of-type a{
+    text-decoration: none;
+    border-bottom: none;
+}
+
+ul li:last-of-type ul li a {
+   /* text-decoration: underline; */
+   text-decoration: none;
+    border-bottom: 1px solid purple;
+
+}
+
+ul li ul li:last-of-type a{
+    text-decoration: none;
+    border-bottom: none;
+}
+
+/*position*/
+
+ul li:hover {
+    display:block;
+}
+
+ul{
+    position: relative;
+}
+
+ul ul {
+    position: absolute;
+    margin-top: -40px;
+    width: 260px;
+    margin-left: 165px;
+    background: rgb(181, 170, 255);
+    list-style-position:inside;
+}
+
+ul li ul li {
+    margin-left: 10px;
+}
+
+ul li:hover {
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+/*display*/
+ul li ul {
+    display: none;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+/*colors*/
+ul {
+    background: linear-gradient(rgb(209, 154, 255), rgb(138, 119, 255));
+    border-radius: 10px;
+    width: 170px;
+    padding: 10px;    
+}
+

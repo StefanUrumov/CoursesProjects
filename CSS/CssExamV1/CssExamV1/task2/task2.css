@@ -1,0 +1,89 @@
+/*body, div {
+    margin: 0;
+    padding: 0;
+}*/
+
+/*position*/
+div#wrapper ul {
+    padding: 0;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+ul li div{
+    display: none;
+} 
+
+        ul li:hover div {
+            display: block;
+            position: absolute;
+            margin-left: 0;
+        }
+        
+        div.tab-content {
+            margin-left: -50px;
+        }
+
+        div.tab-content ul li:hover ul {
+            display: block;
+        }
+
+        div.tab-content ul li ul{
+                display: none;
+                width: auto;
+                list-style: lower-alpha;
+            margin-left: 30px;
+            }
+
+
+
+            /*styles*/
+            div#wrapper {
+                border: 1px solid black;
+                width: 250px;
+                height: 250px;
+            }
+            
+            div.tab-content table {
+                border-spacing: 0;
+            }
+
+            div.tab-content th, td{ 
+                border: 1px solid black;
+                margin: 0;
+            }
+
+            div.tab-content th {
+    background: linear-gradient( rgb(171, 171, 171), rgb(232, 232, 232));
+            }
+
+ul li a:hover {
+        font-weight: bold;
+       background-color: white;
+       border-bottom: none;
+       border-top: none;
+       border-left: none;
+    }
+
+div.tab-content > ul {
+    list-style: circle;
+    list-style-type: circle;
+}
+        div.tab-content ul li{
+            background-color: white;
+            background: none;
+            width: 100px;
+        }
+ul li{
+    display: inline-block;
+    background: linear-gradient(rgb(232, 232, 232), rgb(171, 171, 171));
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    border: 1px solid black;
+}
+

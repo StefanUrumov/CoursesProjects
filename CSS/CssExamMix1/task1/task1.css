@@ -1,0 +1,90 @@
+body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/*styles*/
+div#wrapper {
+    margin-left: 20px;
+}
+
+ul {
+    list-style: none;
+    background:linear-gradient(rgb(209, 154, 255), rgb(138, 119, 255));
+    width: 90px;
+    border-radius: 5px;
+    height: 160px;
+}
+
+    ul ul {
+        background: rgb(181, 170, 255);
+        height: auto;
+        width: 130px;
+    }
+
+    ul li {
+        border-bottom: 1px solid purple;
+        width: 110px;
+        margin-left: -30px;
+        margin-bottom: 5px;
+    }
+
+    ul li:hover {
+        border: 1px solid purple;
+        border-radius: 5px;
+    }
+
+        ul ul li {
+            width: 150px;
+        }
+
+    ul a {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        padding-left: 5px;
+    }
+
+        ul ul  a {
+            padding-right: 5px;
+        }
+
+        ul ul:before {
+                content: url('imgs/arrow.png');
+                margin-left: -45px;
+                position: relative;
+            }
+
+            ul ul li:first-of-type {
+                margin-top: -20px;
+            }
+
+ul ul:last-of-type li {
+    text-align: center;
+}
+
+/*position*/
+ul {
+    position: relative;
+}
+
+    ul ul {
+        position: absolute;
+        margin-left: 110px;
+        margin-top: -20px;
+        display: none;
+    }
+
+    ul li:hover ul{
+        display: block;
+    }    
+    
+
+
+
+
+
+
+
+
+

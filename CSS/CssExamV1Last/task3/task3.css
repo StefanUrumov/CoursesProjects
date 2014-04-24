@@ -1,0 +1,107 @@
+/*styles*/
+ul li {
+    list-style: none;
+}
+
+div#wrapper div {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    background: linear-gradient(rgb(240, 240, 240), rgb(170, 170, 170));
+}
+
+h1 {
+    color: grey;
+    text-align: center;
+}
+
+ul li {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 250px;
+}
+
+li.me-item {
+    background: linear-gradient(rgb(60, 240, 255), rgb(180, 250, 255));
+    margin-left: 80px;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+    li.me-item span {
+        margin-left: 20px;
+        margin-top: 20px;
+        font-weight: bold;  
+    }
+
+    li.me-item p {
+        margin-left: 20px;
+        margin-top: 0px;   
+    }
+
+    li.me-item span.date {
+        margin-left: 120px;
+        margin-top: -20px;
+        font-weight: lighter;  
+    }
+
+
+li.toshko-item {
+    background: linear-gradient(rgb(215, 255, 200), rgb(120, 255, 70));
+    margin-left: -20px;
+    margin-bottom: 5px;
+    color: grey;
+}
+
+   li.toshko-item span {
+        margin-left: 160px;
+        margin-top: 20px;
+        font-weight: bold;  
+    }
+
+    li.toshko-item p {
+        margin-left: 20px;
+        margin-bottom: 0px;   
+    }
+
+    li.toshko-item span.date {
+        margin-left: 20px;
+        margin-top: -40px;
+        font-weight: lighter;  
+    }
+
+input {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 280px;
+    height: 30px;
+    border-radius: 5px;
+    color: grey;
+}
+
+button {
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(230, 230, 230), rgb(185, 185, 185));
+}
+
+    button:hover {
+        background: rgb(240, 240, 240);
+    }
+
+/*positions*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

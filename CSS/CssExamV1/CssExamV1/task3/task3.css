@@ -1,0 +1,114 @@
+
+/*styles*/
+
+div#wrapper > div {
+    background: linear-gradient(rgb(238, 238, 238), rgb(171, 171, 171));
+    width: 300px;
+    border-radius: 10px;
+}
+
+div#wrapper > div h1 {
+    font-size: 20px;
+    color: grey;
+    padding: 10px;
+    text-align: center;
+}
+
+ul.messages-list {
+    list-style: none;
+}
+
+ul.messages-list li {
+    border: 1px solid black;
+    margin-top: 5px;
+    border-radius: 20px;
+    height: 80px;
+    color: grey;
+}
+
+li.me-item {
+    background: linear-gradient(rgb(50, 238, 255), rgb(190, 250, 255));
+    }
+
+    li.me-item span {
+        font-weight: bold;
+    }
+
+        li.me-item span.date {
+            font-weight: normal;
+        }
+        
+        li.toshko-item {
+    background: linear-gradient(rgb(217, 255, 203), rgb(115, 255, 63));
+    }
+
+    li.toshko-item span {
+        font-weight: bold;
+    }
+
+        li.toshko-item span.date {
+            font-weight: normal;
+        }
+
+        
+/*positiion*/
+li.me-item {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+li.me-item span{
+    position: absolute;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+li.me-item span.date{
+    margin-top: 50px;
+    padding-left: 90px;
+}
+
+    li.me-item p {
+        position: absolute;
+    margin-top: 30px;
+    padding-left: 10px;
+    }
+    
+    li.toshko-item {
+    position: relative;
+    margin-right: 60px;
+    margin-left: -30px;
+}
+
+li.toshko-item span{
+    position: absolute;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+li.toshko-item span.date{
+    margin-top: 50px;
+    padding-left: 90px;
+}
+
+    li.toshko-item p {
+        position: absolute;
+    margin-top: 30px;
+    padding-left: 10px;
+    }
+
+
+
+    input {
+        text-align: center;
+        position: relative;
+        width: 200px;
+        margin-left: 5px;
+    }
+
+    button {
+        position: absolute;
+        display: inline;
+        
+    }

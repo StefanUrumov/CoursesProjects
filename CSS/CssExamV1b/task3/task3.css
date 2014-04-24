@@ -1,0 +1,89 @@
+/*styles*/
+div#wrapper div {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 400px;
+    background: darkgrey;
+    color: grey;
+}
+
+h1 {
+    text-align: center;
+    color: grey;
+}
+
+ul {
+    list-style: none;
+    padding: 5px;
+}
+
+    ul li {
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 5px;
+        width: 300px;
+        padding-left: 5px;
+    }
+
+        ul li span:first-of-type {
+            font-weight: bold;
+        }
+
+        ul li p {
+            margin-top: 0;
+        }
+
+        li.me-item {
+            background: linear-gradient(rgb(50, 240, 255), rgb(190, 250, 255));
+        }
+
+            li.me-item span.date {
+                margin-left: 170px;
+                padding-top: -15px;
+            }
+            
+        
+        li.toshko-item {
+            background: linear-gradient(rgb(215, 255, 200), rgb(115, 255, 70));
+        }
+
+            li.toshko-item span:first-of-type {
+                margin-left: 220px;
+            }
+            
+
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(233, 233, 233), rgb(188, 188, 188));
+    font-weight: bold;
+}
+
+/*positions*/
+li.me-item {
+    margin-left: 70px;
+}
+
+input {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+

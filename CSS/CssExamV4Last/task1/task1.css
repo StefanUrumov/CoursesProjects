@@ -1,0 +1,64 @@
+﻿/*styles*/
+div#wrapper div {
+    border: 1px solid black;
+    width: 850px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: linear-gradient(rgb(222, 40, 255), rgb(250, 220, 255));
+}
+
+p.postedby {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    width: 350px;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+p.info {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+h1 {
+    position: relative
+}
+
+img.left-arrow {
+    position: absolute;
+    margin-left: -20px;
+    width: 25px;
+}
+
+img.right-arrow {
+    position: absolute;
+    margin-left: 840px;
+    width: 25px;
+
+}
+
+
+/*positions*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

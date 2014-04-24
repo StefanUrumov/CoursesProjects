@@ -1,0 +1,87 @@
+﻿/*styles*/
+ul {
+    list-style: none;
+    background: rgb(170, 170, 170);
+    width: 260px;
+    margin-left: 50px;
+}
+
+    ul li {
+        border: 1px solid black;
+        width: 300px;
+        background: linear-gradient(rgb(240, 240, 240), rgb(180, 180, 180));
+        background-size: 300px 20px;
+        background-repeat: no-repeat;
+        margin-left: -40px;
+        }
+        
+        ul li:hover {
+            background: rgb(170, 170, 170);
+        }
+
+        ul li.current div.accordion-content {
+            display: block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: grey;
+            font-weight: bold;
+            margin-left: 120px;
+        }
+
+div.accordion-content {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    display: none;
+}
+
+    div.accordion-content h1 {
+        color: grey;
+        margin-left: 20px;
+        margin-top: -5px;
+        }
+
+    div.accordion-content p {
+        margin-top: -15px;
+    }
+
+    div.accordion-content table {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        border-collapse: collapse;
+    }
+
+        div.accordion-content th {
+            border: 1px solid black;
+            background: linear-gradient(rgb(220, 220, 220), rgb(150, 150, 150));
+        }
+
+        div.accordion-content td {
+            border: 1px solid black;
+            background: linear-gradient(rgb(200, 200, 200), rgb(140, 140, 140));
+            color: white;
+        }
+
+
+/*positions*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

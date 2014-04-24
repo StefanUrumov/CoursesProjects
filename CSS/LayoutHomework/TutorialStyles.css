@@ -1,0 +1,283 @@
+﻿div#content {
+    background: rgb(240,240,245);
+}
+
+div#lists {
+    position: relative;
+}
+
+h1#home {
+        font-size: 20px;
+        
+}
+    div#lists ul{
+        list-style: none;
+        margin-left: -40px;
+        font-size: 10px;
+    }
+
+        div#lists ul li:first-of-type {
+            color: darkred;
+            font-weight: bold;
+        }
+
+div#Tutorial {
+    position: absolute;
+    margin-top: -590px;
+    margin-left: 100px;
+    border: 1px solid grey;
+        width: 600px;
+}
+
+    div#Tutorial h1:first-of-type {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    div#Tutorial p {
+        width: 580px;
+        margin-left: 10px;
+    }
+
+    div#Tutorial p:first-of-type {
+        position: absolute;
+        margin-left: 130px;
+        margin-top: -100px;
+        border: none;
+        color: black;
+        font-weight: bold;
+        width: 400px;
+    }
+
+    div#Tutorial input {
+        margin-left: 10px;
+    }
+
+    div#Tutorial hr {
+        height: 2px;
+        background: lightgrey;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+        div#Tutorial hr:last-of-type {
+            margin-bottom: 20px;
+        }
+
+    div#Tutorial img {
+        position: relative;
+    }
+
+    div#Tutorial a {
+        color: darkred;
+        margin-left: 10px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+        div#Tutorial a:first-of-type {
+            position: absolute;
+            margin-top: 70px;
+
+        }
+
+    div.innerCSStext {
+        background: rgb(128, 128, 128);
+        color: white;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+
+div#extras {
+    position: absolute;
+    margin-top: -590px;
+    margin-left: 705px;
+    text-align: center;
+}
+
+    div#extras a {
+        color: darkred;
+    }
+
+input[id='25+'] {
+        background: rgb(190, 230, 250);
+    color: rgb(30, 230, 250);
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    }
+
+    div.ExtraInner {
+        background: rgb(128, 128, 128);
+        color: white;
+        
+    }
+
+    div.extrasMore {
+        border: 1px solid grey;
+        margin-bottom: 2px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+#content {
+    border: 2px solid black;
+    width:880px;
+    height: 1270px;
+    background-color:#e5dfdf;
+    margin:0;
+    padding:0;
+    font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+#lists {
+    float:left;
+    width:150px;
+    height: 935px;
+}
+
+#home {
+display:inline-block;
+font-size:25px;
+}
+
+#content ul li {
+list-style-type:none;
+}
+
+#content ul{
+    padding: 2px;
+}
+
+.RedText {
+color: darkred;
+font-weight:bold;
+}
+
+#Tutorial {
+    border: 2px solid #3d3939;
+    width:500px;
+    height: 1245px;
+    background-color:#ffffff;
+    margin:0;
+    padding:0;
+    display: inline-block;
+}
+
+
+    #Tutorial h1 {
+        font-size: 35px;
+        padding:2px;
+    }
+
+.btnNav {
+background-color:#ffffff;
+width:130px;
+height:30px;
+border-color: black;
+margin-left: 3px;
+}
+
+#Tutorial hr { 
+    width:99%;
+    height: 2px;
+    background-color:grey;
+}
+
+.innerCSStext {
+background-color:grey;
+color:white;
+width:96%;
+height: 20px;
+padding: 5px;
+margin-left:5px;
+font-size:19px;
+font-weight:bold;
+}
+
+#Tutorial img {
+float:left;
+}
+
+#Tutorial a {
+color:darkred;
+}
+
+#start {
+padding-left:120px;
+}
+
+#extras {
+    background-color:white;   
+	width: 200px;
+	height: 1240px;	
+	margin-top: 10px;
+    margin-right:5px;
+	padding: 8px;
+	display: block;	
+	font-size: 17px;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	float: right;
+}
+    
+
+    #extras a {
+    color:darkred;
+    font-size:15px;    
+    }
+
+.ExtraInner {
+background-color:grey;
+color:white;
+width:202px;
+height: 20px;
+font-size:19px;
+font-weight:bold;
+padding:0;
+float:left;
+}
+
+.extrasMore {
+border: 2px solid grey;
+width:200px;
+height: 85px;
+}
+body
+{
+}
+
+
+
+    */

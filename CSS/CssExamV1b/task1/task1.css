@@ -1,0 +1,67 @@
+/*styles*/
+ul {
+    background: linear-gradient(rgb(210, 155, 255), rgb(140, 120, 255));
+    width: 70px;
+    border-radius: 5px;
+}
+
+ul li {
+    list-style: none;
+    border-bottom: 1px solid #BE69FF;
+    width: 100px;
+}
+
+    ul li:last-of-type {
+        border-bottom: none;
+    }
+
+    ul li:hover {
+        border:1px solid #BE69FF;
+    }
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+
+ul ul {
+    width: auto;
+    background: rgb(180, 170, 255);
+    list-style-position: inside;
+}
+
+    ul ul li {
+        width: auto;
+    }
+
+        ul ul li:first-of-type a:before {
+            margin-left: -20px;
+            content:url('/imgs/arrow.png')
+        }    
+   
+
+/*positions*/
+ul li {
+    margin-left: -35px;
+}
+
+ul li a {
+    position: relative;
+}
+
+    ul li:hover ul{
+        display: block;
+    }
+
+ul ul {
+    display: none;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: -20px;
+}
+
+
+
+
+
