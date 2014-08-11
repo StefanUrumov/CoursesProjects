@@ -1,0 +1,24 @@
+﻿
+            
+            
+            //redirect console
+            FileStream ostrm;
+            StreamWriter writer;
+            TextWriter oldOut = Console.Out;
+            try
+            {
+                ostrm = new FileStream("C:/Users/User/Desktop/Redirect.txt", FileMode.OpenOrCreate, FileAccess.Write);
+                writer = new StreamWriter(ostrm);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Cannot open Redirect.txt for writing");
+                Console.WriteLine(e.Message);
+                return;
+            }
+            Console.SetOut(writer);
+            Console.WriteLine(output);
+            Console.SetOut(oldOut);
+            writer.Close();
+            ostrm.Close();
+            

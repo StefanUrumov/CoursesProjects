@@ -1,0 +1,9 @@
+﻿
+            EventsManager manager = new EventsManager();
+            //reflection test object
+            Event occasion = new Event("title", "location", DateTime.Now);
+            MultiDictionary<string, Event> dummyDictionary = new MultiDictionary<string,Event>(true);
+            dummyDictionary.Add("title", occasion);
+            FieldInfo fieldInfo = manager.GetType().GetField("_eventsDictionary", BindingFlags.Instance | BindingFlags.NonPublic);
+            fieldInfo.SetValue(manager, dummyDictionary);
+

@@ -1,0 +1,67 @@
+Problem 2. StyleCop
+	*
+	All StyleCop issues are fixed, but the ones for '//// start of comment', using of 'this' and 'XML documentations missing'.
+
+Problem 5. Code Documentation
+	* can be found at .\HQC-Exam-2014-Morning\Computers-problem\Niki\bin\Debug\ComputersApplication.xml
+
+
+Design pattern: Simple Factory
+	* 
+	Implemented in ComputersFactory.cs
+
+
+Design pattern: Strategy
+	* 
+	implemented via ComputersBuildStrategy.cs, DellBuildStrategy.cs and HpBuildStrategy.cs 
+
+
+Design pattern: Template Method
+	* 
+	implemented in Computers via BuildDellComputers() and BuildHpComputers(). Creating  skeleton of the algorithm in an build_computers_operation,
+ deferring build concrete steps.
+
+
+Design pattern: Abstract factory
+	* 
+	implemented via ComputersAbstractFactory, HpComputersFactory and DellComputersFactory
+
+
+Design pattern: Composite
+	* 
+	implemented in Computers, ComputersAbstractFactory and ComputersBuildStrategy. The hierarchy is presented as part-whole and
+	client(Computers) treats individual computer instances and compositions (BuildDellComputers() and BuildHpComputers()) uniformly.
+
+
+Design pattern: Mediator
+	* 
+	implemented via ProductManager and IProductMediator
+
+
+Found bottlenecks:
+	* 
+	* 
+
+
+Found bugs:
+	* Percent is not displayed in print-output
+	* Number 1000 is too high for HP, but not for Dell. Must be switched, because of their RAM. 
+	* Computer.Play() > Cpu.RandomNumber(1, 10) > Random.Next(min,max) must is called with values(1,11). Else returns 0..9 random numbers  
+
+Single responsibility principle
+	* added CommandProcessor.cs, also logic is divided to fatories, strategies and mediator
+
+Open/closed principle
+	* all code in classes is open for extension (e.g. new methods can be added), but closed for modification (already implemented classes logic  
+	allow its behaviour to be modified without altering its code e.g. ComputersBuildStrategy and DellComputersFactory). 
+
+Liskov substitution principle
+	* CommandProcessor can work with any replaceable instances of Computer
+
+Interface segregation principle
+	*  IProductMediator is client-specific interface, also logic of base classes ComputersBuildStrategy & ComputersAbstractFactory
+	can be extended and put into small interfaces if required
+
+Dependency inversion principle
+	* ProductManager computer_building logic depends on abstraction and easily can be changed from factory modules who implements
+	ComputersAbstractFactory 
